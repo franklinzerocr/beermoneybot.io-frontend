@@ -71,7 +71,7 @@ function App() {
                     <td>001</td>
                     <td>Etherium</td>
                     <td class="table_right">$0.4 </td>
-                      
+
                   </tr>
                   <tr>
                     <td>001</td>
@@ -91,7 +91,27 @@ function App() {
             </div>
           </section>
         </section>
-
+        <section id="plans" class="main-plans-container">
+          <div class="plans-title">
+            <h2>Suscribete en el plan que prefieras</h2>
+          </div>
+          <section class="plans-container-slider">
+            <article class="plans-container-card">
+              <div class="plan-info-container">
+                <h3 class="plan-card-title">Light</h3>
+                <p class="plan-card-price"><span>usdt</span> 1</p>
+                <button class="plan-card-button">Escoge este </button>
+              </div>
+            </article>
+            <article class="plans-container-card">
+              <div class="plan-info-container">
+                <h3 class="plan-card-title">Medium</h3>
+                <p class="plan-card-price"><span>usdt</span> 25</p>
+                <button class="plan-card-button">Escoge este </button>
+              </div>
+            </article>
+          </section>
+        </section>
       </main>
     </div>
   );
