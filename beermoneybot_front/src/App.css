@@ -44,7 +44,7 @@
     left: calc(50% - 114.5px);
     display: block;
     margin-top: 20px;
-    padding: 15px;
+    padding: 10px;
     width: 250px;
     height: 28px;
     background-color: #0000006b;
@@ -60,7 +60,7 @@
 .main-container-what{
   width: 100%;
   height: auto;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 30px;
   text-align: center;
   background-color: black;
@@ -96,7 +96,7 @@
 .main-container-what h2 {
   font-size: 2.6rem;
   font-weight: bold;
-  line-height: 1.6rem;
+  line-height: 2rem;
   color: orange;
   font-family: 'Poppins', sans-serif;
 }
@@ -157,6 +157,47 @@
 
 }
 
+.main-container-use{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: #282623;
+}
+
+
+.main-container-use-background{
+  background-color: black;
+  border-bottom-left-radius: 168px;
+  padding: 60px;
+}
+
+.main-container-use h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.6rem;
+  color: white;
+  margin-bottom: 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-container-use h2 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  line-height: 2rem;
+  color: orange;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-container-use p{
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+
+}
+
 .main-exchange-container{
   width: 100%;
   height: auto;
@@ -164,7 +205,7 @@
   padding-bottom: 30px;
   text-align: center;
   background-color: #282623;
-  border-radius: 50px;
+  border-radius: 0px 150px 100px 100px;
 }
 
 .main-exchange-container-title{
