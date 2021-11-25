@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  /*text-align: center;*/
+  background-color: black;
 }
 
 .App-header {
@@ -14,6 +15,7 @@
   background-image: url('./assets/imgheader.jpg');
   background-position: center;
   background-size: cover;
+  border-radius: 0px 0px 180px 0px;
 }
 
 .header-container{
@@ -24,6 +26,35 @@
   margin-top: 40px;
   text-align: center;
   align-self: center;
+}
+
+.header--title-container{
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  height: 218px;
+  margin-top: 40px;
+  text-align: center;
+  align-self: center;
+}
+
+.header--title-container .header--button{
+  position: absolute;
+    top: calc(100% - 50px);
+    left: calc(50% - 114.5px);
+    display: block;
+    margin-top: 20px;
+    padding: 15px;
+    width: 250px;
+    height: 28px;
+    background-color: #0000006b;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgb(215 168 42 / 57%);
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
 }
 
 .main-container-what{
@@ -41,10 +72,20 @@
   max-width: 900px;
   margin:0 auto;
   font-family: 'Poppins';
+  text-align: left;
+}
+
+.main-container-operate-title{
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin:0 auto;
+  font-family: 'Poppins';
+  text-align: right;
 }
 
 .main-container-what h1 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: bold;
   line-height: 1.6rem;
   color: white;
@@ -53,7 +94,7 @@
 }
 
 .main-container-what h2 {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-weight: bold;
   line-height: 1.6rem;
   color: orange;
@@ -71,12 +112,14 @@
 }
 
 .main-container-verify{
-  width: 100%;
+  width: 90%;
   height: auto;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 30px;
   text-align: center;
   background-color: #282623;
+  border-radius: 60px;
+  margin: 50px auto 0px;
 }
 
 .main-container-verify-title{
@@ -88,7 +131,7 @@
 }
 
 .main-container-verify h1 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: bold;
   line-height: 1.6rem;
   color: white;
@@ -97,7 +140,7 @@
 }
 
 .main-container-verify h2 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: bold;
   line-height: 1.6rem;
   color: white;
@@ -121,6 +164,7 @@
   padding-bottom: 30px;
   text-align: center;
   background-color: #282623;
+  border-radius: 50px;
 }
 
 .main-exchange-container-title{
@@ -140,7 +184,7 @@
 }
 
 .main-table-container{
-  background-color: var(--black);
+  padding-top: 20px;
 }
 
 .main-table-currency{
@@ -257,7 +301,6 @@
   max-width: 900px;
   height: auto;
   margin:0 auto;
-  margin-bottom: 30px;
 }
 
 .plans-title  h2{
@@ -278,7 +321,7 @@
 .plans-container-slider{
   display: flex;
   gap: 12px;
-  height: 320px;
+  height: 380px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
@@ -317,7 +360,7 @@ left: calc(50% - 50px);
 }
 
 .plan-card-title{
-  padding-top: 40px;
+  padding-top: 30px;
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 1.8rem;
@@ -364,5 +407,46 @@ left: calc(50% - 50px);
   background-image: url('./assets/icons/orange-right-arrow.svg');
   background-repeat: no-repeat;
   vertical-align: text-bottom;
+}
+
+
+footer{
+  display: flex;
+  width: 100%;
+  height: 130px;
+  background-color: orange;
+}
+
+footer section{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-left ul{
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
+}
+
+.footer-left li{
+  margin: 10px 0;
+}
+
+.footer-left a{
+  text-decoration: none;
+  color: var(--just-white);
+}
+
+.footer-rigth img{
+  width: 25%;
+}
+
+@media only screen and (min-width: 930px) {
+  .App-header {
+    height: 90vh;
+  }
 }
 

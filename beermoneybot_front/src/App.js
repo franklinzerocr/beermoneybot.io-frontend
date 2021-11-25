@@ -4,7 +4,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="header-container">
+      <div className="header--title-container">
+            <a href="#plans" className="header--button">Conoce nuestros planes <span></span></a>
         </div>
       </header>
       <main>
@@ -19,7 +20,7 @@ function App() {
           <div className="container-what-Img"></div>
         </section>
         <section className="main-container-what">
-          <div className="main-container-what-title">
+          <div className="main-container-operate-title">
             <h1>Cómo opera </h1>
             <h2>al día?</h2>
             <p>La próxima revolución de trading de criptomonedas,
@@ -48,71 +49,87 @@ function App() {
           </div>
           <div className="container-what-Img"></div>
         </section>
-        <section class="main-exchange-container">
-          <div class="main-exchange-container-title">
+        <section className="main-exchange-container">
+          <div className="main-exchange-container-title">
 
           </div>
 
-          <section class="main-table-container">
-            <div class="main-table-currency">
-              <div class="table-currency-container">
+          <section className="main-table-container">
+            <div className="main-table-currency">
+              <div className="table-currency-container">
                 <table>
+                  <thead>
                   <tr>
                     <th>Lorem</th>
                     <th>Lorem</th>
                     <th>Lorem</th>
                   </tr>
+                  </thead>
+                  <tbody>
                   <tr>
                     <td>001</td>
-                    <td class="table_top-left">Bitcoin</td>
-                    <td class="table_top-right table_right">$1.96 </td>
+                    <td>Bitcoin</td>
+                    <td>$1.96 </td>
                   </tr>
                   <tr>
                     <td>001</td>
                     <td>Etherium</td>
-                    <td class="table_right">$0.4 </td>
+                    <td>$0.4 </td>
 
                   </tr>
                   <tr>
                     <td>001</td>
                     <td>Rippler</td>
-                    <td class="table_right">$2.5</td>
+                    <td>$2.5</td>
                   </tr>
                   <tr>
                     <td>001</td>
-                    <td class="table_bottom-left">Stellar</td>
-                    <td class="table_bottom-right table_right">$4.9</td>
+                    <td>Stellar</td>
+                    <td>$4.9</td>
                   </tr>
+                  </tbody>
                 </table>
-                <div class="currency-date">
+                <div className="currency-date">
                   <p>Telegram: únete </p>
                 </div>
               </div>
             </div>
           </section>
         </section>
-        <section id="plans" class="main-plans-container">
-          <div class="plans-title">
+        <section id="plans" className="main-plans-container">
+          <div className="plans-title">
             <h2>Suscribete en el plan que prefieras</h2>
           </div>
-          <section class="plans-container-slider">
-            <article class="plans-container-card">
-              <div class="plan-info-container">
-                <h3 class="plan-card-title">Light</h3>
-                <p class="plan-card-price"><span>usdt</span> 1</p>
-                <button class="plan-card-button">Escoge este </button>
+          <section className="plans-container-slider">
+            <article className="plans-container-card">
+              <div className="plan-info-container">
+                <h3 className="plan-card-title">Light</h3>
+                <p className="plan-card-price"><span>usdt</span> 1</p>
+                <button className="plan-card-button">Escoge este </button>
               </div>
             </article>
-            <article class="plans-container-card">
-              <div class="plan-info-container">
-                <h3 class="plan-card-title">Medium</h3>
-                <p class="plan-card-price"><span>usdt</span> 25</p>
-                <button class="plan-card-button">Escoge este </button>
+            <article className="plans-container-card">
+              <div className="plan-info-container">
+                <h3 className="plan-card-title">Medium</h3>
+                <p className="plan-card-price"><span>usdt</span> 25</p>
+                <button className="plan-card-button">Escoge este </button>
               </div>
             </article>
           </section>
         </section>
       </main>
+      <footer>
+        <section className="footer-left">
+            <ul>
+                <li><a href="#"> Twitter </a></li>
+                <li><a href="#"> Franklin Noriega </a></li>
+                <li><a href="#"> ROI </a></li>
+            </ul>
+        </section>
+        <section className="footer-rigth">
+            <img src="./assets/Logos/Logoindex.png" alt="Logo de BeermoneyBot 2020"/>
+        </section>
+    </footer>
     </div>
   );
 }
