@@ -1,3 +1,5 @@
+import '../styles/Suscription_style.scss';
+
 const SectionSuscription = () => {
     return (
         <section id="plans" className="main-plans-container">

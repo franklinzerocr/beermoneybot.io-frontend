@@ -1,3 +1,5 @@
+import '../styles/Use_style.scss'
+
 const SectionUse = () => {
     return (
         <section className="main-container-use">

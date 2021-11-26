@@ -9,9 +9,7 @@ import SectionSuscription from "./components/SectionSuscription";
 import Footer from "./components/Footer";
 import './App.css';
 
-function App() {
-
-
+const App = () =>{
   return (
     <div className="App">
       <Header/>

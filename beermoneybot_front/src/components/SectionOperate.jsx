@@ -1,3 +1,5 @@
+import '../styles/Operate_style.scss'
+
 const SectionOperate = () => {
     return (
         <section className="main-container-what">

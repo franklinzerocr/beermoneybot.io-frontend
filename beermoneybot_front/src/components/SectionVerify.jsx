@@ -1,3 +1,5 @@
+import '../styles/Verify_style.scss'
+
 const SectionVerify = () => {
     return(
         <section className="main-container-verify">

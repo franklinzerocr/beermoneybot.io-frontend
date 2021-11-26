@@ -1,10 +1,13 @@
+import '../styles/Exchange_style.scss';
+
 const SectionExchange = () => {
-    return (
-        <section className="main-exchange-container">
+  return (
+    <section className="main-exchange-container">
+      <a className="twitter-timeline" href="https://twitter.com/Beermoney_Bot?ref_src=twsrc%5Etfw"> @Beermoney_Bot</a> 
+      <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
 
-
-            <section className="main-table-container">
-                {/* <div className="main-table-currency">
+      <section className="main-table-container">
+        {/* <div className="main-table-currency">
             <div className="table-currency-container">
               <table>
                 <thead>
@@ -43,9 +46,9 @@ const SectionExchange = () => {
               </div>
             </div>
           </div> */}
-            </section>
-        </section>
-    )
+      </section>
+    </section>
+  )
 
 }
 

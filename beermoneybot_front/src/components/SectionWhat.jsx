@@ -1,3 +1,4 @@
+import '../styles/What_style.scss';
 
 const SectionWhat = () => {
     return (

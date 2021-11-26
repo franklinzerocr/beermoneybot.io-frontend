@@ -1,3 +1,4 @@
+import '../styles/Header_style.scss';
 
 const Header = () => {
     return (
