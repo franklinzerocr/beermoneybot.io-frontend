@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
+import ContainerMain from "./containers/ContainerMain";
 import SectionWhat from "./components/SectionWhat";
 import SectionOperate from "./components/SectionOperate";
 import SectionVerify from "./components/SectionVerify";
@@ -13,14 +14,14 @@ const App = () =>{
   return (
     <div className="App">
       <Header/>
-      <main>
+      <ContainerMain>
         <SectionWhat/>
         <SectionOperate/>
         <SectionVerify/>
         <SectionUse/>
        <SectionExchange/>
        <SectionSuscription/>
-      </main>
+     </ContainerMain>
       <Footer/>
     </div>
   );

@@ -1,11 +1,10 @@
 .main-exchange-container{
-    width: 100%;
-    height: auto;
-    padding-top: 40px;
-    padding-bottom: 30px;
+    padding: 40px 30px 30px 30px;
+    width: auto;
+    height: 450px;
     text-align: center;
     background-color: #282623;
-    border-radius: 0px 150px 100px 100px;
+    border-radius: 0px 110px 100px 100px;
   }
   
   .main-exchange-container-title{
@@ -138,3 +137,17 @@
     line-height: 0.5rem;
     color: var(--warm-black);
   }
+
+  .twitter-timeline twitter-timeline-rendered{
+    width: 80% !important;
+    padding: 0px;
+    border: none;
+    max-width: 100%;
+    min-width: 200px;
+  }
+
+@media (min-width: 1200px) {
+  .twitter-timeline twitter-timeline-rendered{
+    padding-left: 100px;
+  }
+}

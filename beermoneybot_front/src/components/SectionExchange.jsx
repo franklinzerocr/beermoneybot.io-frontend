@@ -1,10 +1,18 @@
+import React from 'react';
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import '../styles/Exchange_style.scss';
 
 const SectionExchange = () => {
   return (
     <section className="main-exchange-container">
-      <a className="twitter-timeline" href="https://twitter.com/Beermoney_Bot?ref_src=twsrc%5Etfw"> @Beermoney_Bot</a> 
-      <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+      <TwitterTimelineEmbed
+          sourceType="profile"
+          screenName="Beermoney_Bot"
+          theme="dark"
+          linkColor="#FF9933"
+          transparent="true"
+          autoHeight
+        />
 
       <section className="main-table-container">
         {/* <div className="main-table-currency">
