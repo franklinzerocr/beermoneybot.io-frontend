@@ -10,9 +10,15 @@ const SectionExchange = () => {
           screenName="Beermoney_Bot"
           theme="dark"
           linkColor="#FF9933"
-          transparent="true"
-          autoHeight
+          transparent
+          noFooter
+          options={{height: 400}} 
         />
+
+        {/* onLoad={tweetWidgetEl => {
+    const tweetEl = tweetWidgetEl.shadowRoot.querySelector('.EmbeddedTweet')
+    tweetEl.style.border = '5px solid red'
+}}*/}
 
       <section className="main-table-container">
         {/* <div className="main-table-currency">
