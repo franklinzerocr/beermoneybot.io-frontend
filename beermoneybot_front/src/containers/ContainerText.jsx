@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Title = ({ child1, child2 , child3}) => {
+const Text = ({ child1, child2 , child3}) => {
     return (
         <div>
             <h1>{child1}</h1>
@@ -10,4 +10,4 @@ const Title = ({ child1, child2 , child3}) => {
     );
 }
 
-export default Title;
+export default Text;
