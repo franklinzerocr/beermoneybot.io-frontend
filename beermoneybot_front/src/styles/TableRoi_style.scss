@@ -17,9 +17,21 @@
 }
 
 .grid-container-tableroi > div {
-  background-color: #a5a3a3;
+  background-color: #42403c;
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
   border-radius: 5px;
+}
+
+.tableroi-sqare{
+    text-align: left;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.tableroi-center{
+    font-size: 2.2rem;
+    font-weight: bold;
 }
