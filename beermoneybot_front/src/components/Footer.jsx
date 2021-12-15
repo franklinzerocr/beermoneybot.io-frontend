@@ -1,4 +1,5 @@
 import '../styles/Footer_style.scss';
+import logo from '../assets/Logos/Logoindex.png'
 
 const Footer = () => {
     return (
@@ -11,7 +12,7 @@ const Footer = () => {
                 </ul>
             </section>
             <section className="footer-rigth">
-                <img src="./assets/Logos/Logoindex.png" alt="Logo de BeermoneyBot 2020" />
+                {/* <img src={logo} alt="Logo de BeermoneyBot 2020" /> */}
             </section>
         </footer>
     )

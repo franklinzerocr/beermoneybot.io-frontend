@@ -12,6 +12,15 @@
     border-bottom-left-radius: 168px;
     padding: 60px;
   }
+
+  .main-container-use-title {
+    width: 100%;
+    min-width: 288px;
+    max-width: 950px;
+    margin: 0 auto;
+    font-family: "Poppins";
+    text-align: left;
+  }
   
   .main-container-use h1 {
     font-size: 2.2rem;
@@ -38,4 +47,47 @@
     color: white;
     font-family: 'Poppins', sans-serif;
   
+  }
+
+  .grid-exchanges {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: black;
+    padding: 10px;
+  }
+  .grid-exchange {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center; 
+  }
+
+  .grid-exchange img{
+    background-size:cover;
+    width: 140px;
+    height: 140px;
+}
+
+@media (min-width: 1200px) {
+
+  
+  .section-exchange{
+    display: inline-blocks;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .main-product-container .product-article {
+    margin-bottom: 20px;
+    max-width: 400px;
+  }
+  
+  .plans-container-slider{
+    justify-content: center;
+  }
   }
