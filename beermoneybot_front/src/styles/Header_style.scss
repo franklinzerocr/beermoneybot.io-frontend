@@ -4,10 +4,10 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     min-width: 320px;
     text-align: center;
-    background-image: url('../assets/imgheader.jpg');
+    background-image: url('../assets/banner.png');
     background-position: center;
     background-size: cover;
     border-radius: 0px 0px 180px 0px;
@@ -18,7 +18,7 @@
     min-width: 288px;
     max-width: 900px;
     height: 218px;
-    margin-top: 40px;
+    margin-top: 50px;
     text-align: center;
     align-self: center;
   }
@@ -28,10 +28,37 @@
     min-width: 288px;
     max-width: 900px;
     height: 218px;
-    margin-top: 40px;
+    margin-top: 80px;
     text-align: center;
     align-self: center;
   }
+
+  .header--title-container h1 {
+    font-size: 4.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: white;
+}
+
+.header--title-container p{
+  padding: 10px 40px 10px;
+    font-size: 2rem;
+    font-weight:500;
+    line-height: 2.6rem;
+    color:white;
+}
+
+.header-img{
+  position: absolute;
+    width: 50%;
+    margin-left: 50%;
+    top: 300px;
+}
+
+.header-img img{
+  width: 100%;
+  object-position: 180px;
+}
   
   .header--title-container .header--button{
     position: absolute;
@@ -50,4 +77,10 @@
       font-weight: bold;
       text-decoration: none;
       color: white;
+  }
+
+  @media only screen and (min-width: 930px) {
+    .App-header {
+      height: 80vh;
+    }
   }
