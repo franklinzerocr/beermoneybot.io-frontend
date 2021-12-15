@@ -5,7 +5,7 @@ import '../styles/Exchange_style.scss';
 const SectionExchange = () => {
   return (
     <section className="main-exchange-container">
-      <TwitterTimelineEmbed
+      {/* <TwitterTimelineEmbed
           sourceType="profile"
           screenName="Beermoney_Bot"
           theme="dark"
@@ -60,7 +60,7 @@ const SectionExchange = () => {
               </div>
             </div>
           </div> */}
-      </section>
+      </section> 
     </section>
   )
 
