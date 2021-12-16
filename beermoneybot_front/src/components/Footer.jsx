@@ -6,9 +6,9 @@ const Footer = () => {
         <footer>
             <section className="footer-left">
                 <ul>
-                    <li><a href="#"> Twitter </a></li>
+                    {/* <li><a href="#"> Twitter </a></li>
                     <li><a href="#"> Franklin Noriega </a></li>
-                    <li><a href="#"> ROI </a></li>
+                    <li><a href="#"> ROI </a></li> */}
                 </ul>
             </section>
             <section className="footer-rigth">

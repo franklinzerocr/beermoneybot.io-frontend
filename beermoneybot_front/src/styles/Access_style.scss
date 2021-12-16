@@ -3,7 +3,8 @@
     width: auto;
     height: auto;
     text-align: center;
-    background-color: #282623;
+    background-image: url('../assets/ilustraciones-04.svg');
+    background-size: cover;
     border-radius: 0px 110px 10px 10px;
   }
   
@@ -15,9 +16,10 @@
     margin:0 auto;
     font-family: 'Poppins';
     text-align: right;
+    color: white;
   }
 
-  .main-exchange-container h1 {
+  .main-exchange-container-title h1 {
     font-size: 2.2rem;
     font-weight: bold;
     line-height: 1.6rem;
@@ -26,7 +28,7 @@
     font-family: 'Poppins', sans-serif;
   }
   
-  .main-exchange-container h2 {
+  .main-exchange-container-title h2 {
     font-size: 2.6rem;
     font-weight: bold;
     line-height: 2rem;
@@ -96,28 +98,27 @@
 }
 
 .plans-container-card{
-    position: relative;
-    scroll-snap-align: center;
-    width: 65%;
-    min-width: 190px;
-    max-width: 520px;
-    height: auto;
-    margin: 50px auto 0px;
-    /*margin: 50px 15px 0px  en vez de gap*/
-    padding: 15px 15px;
-    background-color: white;
-    border-radius: 15px;
-    border-top: 40px orange solid;
-    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+  position: relative;
+  scroll-snap-align: center;
+  width: 100%;
+  min-width: 190px;
+  max-width: 620px;
+  height: auto;
+  margin: 50px auto 0px;
+  padding-bottom: 10px;
+  background-color: white;
+  border-radius: 15px;
+  /* border-top: 100px orange solid; */
+  box-shadow: 0 4px 8px rgb(89 73 30 / 16%);
 }
 
 .plans-container-card .recommended{
     position: absolute;
-	top: -90px;
+	top: 40px;
 	left: calc(50% - 50px);
     display: block;
-    width: 120px;
-    height: 70px;
+    width: 100px;
+    height: 60px;
     padding: 5px;
     font-size: 1.3rem;
     font-weight: 500;
@@ -127,22 +128,28 @@
 }
 
 .plan-card-title{
-    padding-top: 20px;
-    font-size: 1.2rem;
-    font-weight: lighter;
-    line-height: 1.6rem;
-    color: black;
+  width: 100%;
+  max-width: 600px;
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.6rem;
+  color: white;
+  background-color: orange;
+  margin-top: 0;
+  padding: 10px 10px 20px;
 }
 
 .plan-info-container input[type=text], select {
-  width: 100%;
+  width: 80%;
   padding: 12px 20px;
-  margin: 8px 0;
   display: inline-block;
   border: none;
   border-radius: 4px;
   box-sizing: border-box;
   background-color: #f2f2f2;
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 input[typy=text] #ftext{

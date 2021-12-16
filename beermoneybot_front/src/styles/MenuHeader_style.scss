@@ -25,10 +25,10 @@
   }
 
   .logo-menu{
-      background-image: url('../assets/Logos/Logoindex.png');
+      background-image: url('../assets/logo-menu.svg');
       background-size:cover;
-      width: 100%;
-      height: 100%;
+      width:150px;
+      height: 100px;
   }
 
   @media only screen and (min-width: 930px) {
@@ -48,6 +48,8 @@
     }
 
     .logo-menu {
+      background-size: contain;
+      background-repeat: no-repeat;
       width: 150px;
       height: 100px;
     }

@@ -10,7 +10,6 @@
     background-image: url('../assets/banner.png');
     background-position: center;
     background-size: cover;
-    border-radius: 0px 0px 180px 0px;
   }
   
   .header-container{
@@ -52,12 +51,12 @@
   position: absolute;
     width: 50%;
     margin-left: 50%;
-    top: 300px;
+    top: 200px;
 }
 
 .header-img img{
   width: 100%;
-  object-position: 180px;
+  object-position: 160px;
 }
   
   .header--title-container .header--button{
@@ -81,6 +80,18 @@
 
   @media only screen and (min-width: 930px) {
     .App-header {
-      height: 80vh;
+      height: 60vh;
     }
+
+    .header-img {
+      position: absolute;
+      width: 50%;
+      margin-left: 50%;
+      top: 210px;
+  }
+
+  .header-img img {
+    width: 83%;
+    object-position: 170px;
+}
   }
