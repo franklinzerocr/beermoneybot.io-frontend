@@ -1,17 +1,37 @@
 .main-exchange-container{
     padding: 40px 30px 30px 30px;
     width: auto;
-    height: 450px;
+    height: auto;
     text-align: center;
     background-color: #282623;
     border-radius: 0px 110px 10px 10px;
   }
   
   .main-exchange-container-title{
+
     width: 90%;
     min-width: 288px;
     max-width: 900px;
     margin:0 auto;
+    font-family: 'Poppins';
+    text-align: right;
+  }
+
+  .main-exchange-container h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    color: white;
+    margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .main-exchange-container h2 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    line-height: 2rem;
+    color: orange;
+    font-family: 'Poppins', sans-serif;
   }
   
   .exchange-container-img{
@@ -24,119 +44,7 @@
     background-image: url("../assets/Logos/timeline2.png");
     background-size: cover;
   }
-  
-  
-  .table-currency-container{
-    width: 90%;
-    min-width: 230px;
-    max-width: 300px;
-    height: 250px;
-    margin: 0 auto;
-  }
-  
-  .main-table-container{
-    padding-top: 20px;
-  }
-  
-  .main-table-currency{
-    width: 70%;
-    min-width: 235px;
-    max-width: 500px;
-    height: 360px;
-    margin: 0 auto;
-    font-family: 'Inter', sans-serif;
-    font-size: 2.4rem
-  }
-  
-  .main-table-currency .table-title{
-    margin-bottom: 30px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 2.3rem;
-    color : var(--bitcoin-orange)
-  }
-  
-  .table-currency-container table{
-    width: 100%;
-    height: 100%;
-  }
-  
-  .table-currency-container th{
-    width: 50%;
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 1.9rem;
-    color: orange;
-  }
-  
-  .table-currency-container td{
-    width: 50%;
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.9rem;
-    color: white;
-    background-color: var(--black);
-    
-  }
-  
-  .table-currency-container .table_top-left{
-    border-radius: 15px 0 0 0;
-  }
-  
-  .table-currency-container .table_bottom-left{
-    border-radius: 0 0 15px 0;
-  }
-  
-  .table-currency-container .table_bottom-left{
-    border-radius: 0 0 0 15px;
-  }
-  
-  .table-currency-container .table_top-right{
-    border-radius: 0 15px 0 0;
-  }
-  .table-currency-container .table_bottom-right{
-    border-radius: 0 0 15px 0;
-  }
-  
-  .table-currency-container .table_right{
-    font-size: 1.4rem;
-    font-weight: normal;
-    line-height: 1.7rem;
-    color: white;
-  }
-  
-  .table-icon-down{
-    width: 13px;
-    height: 8px;
-    display: inline-block;
-    background-image: url('../assets/icons/trending-down.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .table-icon-up{
-    width: 13px;
-    height: 8px;
-    display: inline-block;
-    background-image: url('../assets/icons/trending-up.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .currency-date{
-    width: 244px;
-    height: 30px;
-    margin: 0 auto;
-    padding: 8px;
-    border-radius: 8px;
-    background-color: orange;
-  }
-  
-  .currency-date p {
-    font-size: 1.2rem;
-    font-weight: 300;
-    line-height: 0.5rem;
-    color: var(--warm-black);
-  }
+
 
   .twitter-timeline twitter-timeline-rendered{
     width: 80% !important;
@@ -145,6 +53,133 @@
     max-width: 100%;
     min-width: 200px;
   }
+
+  .main-plans-container{
+    width: 100%;
+    min-width: 320px;
+    padding: 65px 0;
+    text-align: center;
+    background-color: var(--off-white);
+}
+
+.plans-title{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: auto;
+    margin:0 auto;
+    margin-bottom: 30px;
+}
+
+.plans-title  h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.plans-title p{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: gray;
+}
+
+.plans-container-slider{
+    display: flex;
+    gap: 12px;
+    height: auto;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plans-container-card{
+    position: relative;
+    scroll-snap-align: center;
+    width: 65%;
+    min-width: 190px;
+    max-width: 520px;
+    height: auto;
+    margin: 50px auto 0px;
+    /*margin: 50px 15px 0px  en vez de gap*/
+    padding: 15px 15px;
+    background-color: white;
+    border-radius: 15px;
+    border-top: 40px orange solid;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.plans-container-card .recommended{
+    position: absolute;
+	top: -90px;
+	left: calc(50% - 50px);
+    display: block;
+    width: 120px;
+    height: 70px;
+    padding: 5px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    background-image: url('../assets/Logos/Logoindex.png');
+    background-size: cover;
+}
+
+.plan-card-title{
+    padding-top: 20px;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    line-height: 1.6rem;
+    color: black;
+}
+
+.plan-info-container input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+input[typy=text] #ftext{
+  height: 100px;
+}
+
+.plan-card-price{
+    padding: 5px;
+    font-size: 5.3rem;
+    font-weight: bold;
+    line-height: 5rem;
+    color: black;
+}
+.plan-info-container span{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.plan-card-saving{
+    font-size: 1.2rem;
+    color:gray;
+}
+
+.plan-card-button{
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: orange;
+    border: 2px solid orange;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+}
+
 
 @media (min-width: 1200px) {
 

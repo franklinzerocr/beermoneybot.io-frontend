@@ -11,7 +11,7 @@ const Header = () => {
             <div className="header--title-container">
                 <p>¿Un robot que haga trading mejor que un humano?</p>
                 <h1>Bro... Hold my beer</h1>
-                <a href="#plans" class="header--button">Conoce nuestros planes <span></span></a>
+                
             </div>
             <div className="header-img"> 
                 <img src={logo} alt=""></img>

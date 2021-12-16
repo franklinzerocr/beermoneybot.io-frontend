@@ -1,10 +1,16 @@
-.grid-container {
-    display: flex;
+
+   .grid-container {
+    display: -webkit-box;
+    position: relative;
     grid-row-gap: 10px;
-    grid-template-columns: 200px auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
     padding: 10px;
     color: white;
-  }
+    overflow-x: auto;
+    max-width: 320px;
+}
+
+
   
   .grid-item {
     padding: 20px;
@@ -33,7 +39,8 @@
       grid-template-columns: 200px auto auto auto auto;
       padding: 10px;
       color: white;
-    }
+      max-width: 100%;
+  }
 
     .grid-item {
       font-size: 30px;

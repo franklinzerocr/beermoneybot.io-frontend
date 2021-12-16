@@ -34,26 +34,22 @@
   .plans-container-slider{
     display: flex;
     gap: 12px;
-    height: 380px;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    overflow-y: hidden;
+    height: auto;
   }
   
   .plans-container-card{
     position: relative;
     scroll-snap-align: center;
-    width: 65%;
-    min-width: 190px;
-    max-width: 320px;
-    height: 280px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 600px;
+    height: auto;
     margin: 50px auto 0px;
-    /*margin: 50px 15px 0px  en vez de gap*/
     padding: 0 15px;
-    background-color: #282623;
+    background-color: white;
     border-radius: 15px;
-    box-shadow: 3px 3px 3px 3px rgb(159 123 27 / 75%);
+    border-top: orange 50px solid;
+    box-shadow: 0 4px 8px rgb(89 73 30 / 16%);
   }
   
   .plans-container-card .recommended{
@@ -73,9 +69,8 @@
   }
   
   .plan-card-title{
-    padding-top: 30px;
-    font-size: 2.2rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 200;
     line-height: 1.8rem;
     color: white;
   
