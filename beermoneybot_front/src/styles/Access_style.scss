@@ -1,14 +1,17 @@
-.main-exchange-container{
-    padding: 40px 30px 30px 30px;
-    width: auto;
-    height: auto;
-    text-align: center;
-    background-image: url('../assets/ilustraciones-04.svg');
-    background-size: cover;
-    border-radius: 0px 110px 10px 10px;
+.main-access-container{
+  position: relative;
+  min-width: 320px;
+  width: auto;
+  height: auto;
+  text-align: center;
+  background-image: url('../assets/ilustraciones-04.svg');
+  background-size: contain;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  padding-top: 100px;
   }
   
-  .main-exchange-container-title{
+  .main-access-container-title{
 
     width: 90%;
     min-width: 288px;
@@ -19,7 +22,7 @@
     color: white;
   }
 
-  .main-exchange-container-title h1 {
+  .main-access-container-title h1 {
     font-size: 2.2rem;
     font-weight: bold;
     line-height: 1.6rem;
@@ -28,7 +31,7 @@
     font-family: 'Poppins', sans-serif;
   }
   
-  .main-exchange-container-title h2 {
+  .main-access-container-title h2 {
     font-size: 2.6rem;
     font-weight: bold;
     line-height: 2rem;
@@ -95,26 +98,27 @@
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
+    padding: 10px;
 }
 
 .plans-container-card{
   position: relative;
   scroll-snap-align: center;
-  width: 100%;
+  width: 70%;
   min-width: 190px;
   max-width: 620px;
   height: auto;
-  margin: 50px auto 0px;
+  margin: o auto;
   padding-bottom: 10px;
   background-color: white;
   border-radius: 15px;
-  /* border-top: 100px orange solid; */
+  border-top: 12px orange solid;
   box-shadow: 0 4px 8px rgb(89 73 30 / 16%);
 }
 
 .plans-container-card .recommended{
     position: absolute;
-	top: 40px;
+	top: 30px;
 	left: calc(50% - 50px);
     display: block;
     width: 100px;
@@ -128,7 +132,7 @@
 }
 
 .plan-card-title{
-  width: 100%;
+  width: auto;
   max-width: 600px;
   font-size: 1rem;
   font-weight: lighter;
@@ -136,7 +140,7 @@
   color: white;
   background-color: orange;
   margin-top: 0;
-  padding: 10px 10px 20px;
+  padding: 0px 10px 20px;
 }
 
 .plan-info-container input[type=text], select {
@@ -152,9 +156,17 @@
   margin-right: 30px;
 }
 
-input[typy=text] #ftext{
-  height: 100px;
+.plan-info-container textarea{
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  margin: 25px;
+  padding: 10px;
+  width: 80%;
+  position: relative;
 }
+
+
 
 .plan-card-price{
     padding: 5px;
@@ -190,8 +202,9 @@ input[typy=text] #ftext{
 
 @media (min-width: 1200px) {
 
-  .main-exchange-container {
-    padding: 30px 30px 30px 230px;
+  .main-access-container {
+    margin: 0 auto;
+   
   }
   
 }
