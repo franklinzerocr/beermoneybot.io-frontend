@@ -1,15 +1,28 @@
 import '../styles/What_style.scss';
-import Text from '../containers/ContainerText';
 import { TableRoi } from './TableRoi';
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
 const SectionWhat = () => {
     return (
-        <section className="main-container-what">
-            <div className="main-container-what-title">
-                {/* <Text child1={"¿Qué es"} child2={"Beermoney Bot?"}  /> */}
-                <TableRoi />
-
-            </div>
+        <section className="main-container-roi">
+            <section className="container-articles-roi" >
+            <article className="article-roi">  <TableRoi /> </article>
+               
+       
+            <article className="article-roi"> 
+                <a className="twitter-timeline" href="https://twitter.com/Beermoney_Bot?ref_src=twsrc%5Etfw"> @Beermoney_Bot</a> 
+                <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+                <TwitterTimelineEmbed
+                    sourceType="profile"
+                    screenName="Beermoney_Bot"
+                    footer
+                    // theme="dark"
+                    linkColor="#FF9933"
+                    transparent="true"
+                    // autoHeight
+                />
+           </article>
+           </section>
         </section>
     );
 }

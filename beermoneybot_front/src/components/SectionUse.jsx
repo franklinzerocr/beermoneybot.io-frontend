@@ -1,6 +1,6 @@
 import Text from '../containers/ContainerText';
 import '../styles/Use_style.scss'
-import logo from '../assets/Logos/Logoindex.png'
+import logo from '../assets/Logos/LogoIndex.png'
 
 const SectionUse = () => {
     return (

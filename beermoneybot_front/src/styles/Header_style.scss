@@ -78,9 +78,26 @@
       color: white;
   }
 
+  @media only screen and (min-width: 500px) {
+
+    .App-header {
+      height: 400px;
+    }
+
+    .header--title-container{
+      width: 80%;
+    }
+
+    .header-img img {
+      width: 50%;
+      object-position: 130px;
+    }
+
+  }
+
   @media only screen and (min-width: 930px) {
     .App-header {
-      height: 60vh;
+      height: 70vh;
     }
 
     .header-img {
@@ -93,6 +110,31 @@
   .header-img img {
     width: 83%;
     object-position: 170px;
+  }
+
+  .header--title-container {
+    width: 60%;
+  }
+
+}
+
+  @media only screen and (min-width: 1200px) {
+    .App-header {
+      height: 460px;
+    }
+
+    .header-img {
+      position: absolute;
+      width: 50%;
+      margin-left: 50%;
+      top: 210px;
+  }
+
+  .header-img img {
+    width: 70%;
+    margin-left: 40%;
+    top: 82px;
+    object-position: 86px;
 }
 
 .header--title-container h1 {
@@ -111,4 +153,4 @@ padding: 10px 40px 10px;
 }
 
 
-  }
+}

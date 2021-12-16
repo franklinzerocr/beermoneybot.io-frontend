@@ -1,12 +1,23 @@
 @import 'var';
 
-.main-container-what{
-    width: 100%;
-    height: auto;
-    padding-top: 50px;
-    padding-bottom: 30px;
-    text-align: center;
-    background-color: black;
+.main-container-roi{
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+  }
+
+  .article-roi{
+    margin: 0 auto;
+    width: 70%;
+    max-width: 360px;
+    min-width: 280px;
+    min-height: 150px;
+    max-height: 400px;
+    overflow-y: auto;
   }
   
   .main-container-what-title{
@@ -18,7 +29,7 @@
     text-align: left;
 }
 
-.main-container-what h1 {
+.main-container-roi h1 {
     font-size: 2.2rem;
     font-weight: bold;
     line-height: 1.6rem;
@@ -27,7 +38,7 @@
     font-family: 'Poppins', sans-serif;
   }
   
-  .main-container-what h2 {
+  .main-container-roi h2 {
     font-size: 2.6rem;
     font-weight: bold;
     line-height: 2rem;
@@ -44,3 +55,12 @@
     font-family: 'Poppins', sans-serif;
   
   }
+
+  @media (min-width: 1200px){
+    .container-articles-roi {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1280px;
+        margin: 0 auto;
+    }
+}

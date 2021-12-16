@@ -25,9 +25,9 @@
 
   .logo-menu{
       background-image: url('../assets/logo-menu.svg');
-      background-size:cover;
-      width:150px;
-      height: 100px;
+      background-size:contain;
+      width: 100%;
+      height: auto;
   }
 
   @media only screen and (min-width: 930px) {
