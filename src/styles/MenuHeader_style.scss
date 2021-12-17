@@ -1,0 +1,55 @@
+
+   .grid-container {
+    display: -webkit-box;
+    position: relative;
+    grid-row-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    color: white;
+    overflow-x: auto;
+}
+
+
+  
+  .grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-item a{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+  }
+
+  .logo-menu{
+      background-image: url('../assets/logo-menu.svg');
+      background-size:contain;
+      width: 100%;
+      height: auto;
+  }
+
+  @media only screen and (min-width: 930px) {
+
+    .grid-container {
+      display: grid;
+      grid-row-gap: 10px;
+      grid-template-columns: 200px auto auto auto auto;
+      padding: 10px;
+      color: white;
+      max-width: 100%;
+  }
+
+    .grid-item {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .logo-menu {
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 150px;
+      height: 100px;
+    }
+  }
