@@ -1,10 +1,10 @@
-import '../styles/Operate_style.scss'
+import '../styles/HowItWork_style.scss'
 import Text from '../containers/ContainerText';
 import icon_graph from '../assets/Ilustracion-tecnico.svg'
 import icon_feelings from '../assets/Ilustracion-sentimiento.svg'
 import icon_twitter from '../assets/robot-twitter.svg'
 
-const SectionOperate = () => {
+const SectionHowItWork = () => {
     return (
         <section className="main-container-what" id="operate">
             <div className="main-container-operate-title">
@@ -38,4 +38,4 @@ const SectionOperate = () => {
     );
 }
 
-export default SectionOperate;
+export default SectionHowItWork;

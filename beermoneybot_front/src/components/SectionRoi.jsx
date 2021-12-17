@@ -1,8 +1,8 @@
-import '../styles/What_style.scss';
+import '../styles/SectionRoi_style.scss';
 import { TableRoi } from './TableRoi';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
-const SectionWhat = () => {
+const SectionRoi = () => {
     return (
         <section className="main-container-roi">
             <section className="container-articles-roi" >
@@ -16,9 +16,9 @@ const SectionWhat = () => {
                     sourceType="profile"
                     screenName="Beermoney_Bot"
                     footer
-                    // theme="dark"
+                    //theme="dark"
                     linkColor="#FF9933"
-                    transparent="true"
+                    transparent
                     // autoHeight
                 />
            </article>
@@ -27,4 +27,4 @@ const SectionWhat = () => {
     );
 }
 
-export default SectionWhat;
+export default SectionRoi;

@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "./components/Header";
 import ContainerMain from "./containers/ContainerMain";
-import SectionWhat from "./components/SectionWhat"; 
-import SectionOperate from "./components/SectionOperate";
-import SectionUse from "./components/SectionUse";
+import SectionRoi from "./components/SectionRoi"; 
+import SectionHowItWork from "./components/SectionHowItWork";
+import SectionExchanges from "./components/SectionExchanges";
 import SectionAccess from "./components/SectionAccess";
 import Footer from "./components/Footer";
 import './App.css';
@@ -13,9 +13,9 @@ const App = () =>{
     <div className="App">
       <Header/>
       <ContainerMain>
-        <SectionWhat />
-        <SectionOperate/>
-        <SectionUse/>
+        <SectionRoi />
+        <SectionHowItWork/>
+        <SectionExchanges/>
        <SectionAccess/>
      </ContainerMain>
       <Footer/>

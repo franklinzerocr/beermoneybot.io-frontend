@@ -1,8 +1,8 @@
 import Text from '../containers/ContainerText';
-import '../styles/Use_style.scss'
+import '../styles/Exchanges_style.scss'
 import logo from '../assets/Logos/LogoIndex.png'
 
-const SectionUse = () => {
+const SectionExchanges = () => {
     return (
         <section className="main-container-use">
             <div className="main-container-use-background">
@@ -25,4 +25,4 @@ const SectionUse = () => {
 
 }
 
-export default SectionUse;
+export default SectionExchanges;
