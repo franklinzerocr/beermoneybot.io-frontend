@@ -3,12 +3,12 @@
     width: 100%;
     height: auto;
     text-align: center;
-    background-color: #282623;
+    background-color: var(--backcolor);
   }
   
   
   .main-container-use-background{
-    background-color: black;
+    background-color: var(--backcolor);
     padding: 60px;
   }
 
@@ -53,7 +53,7 @@
   .grid-exchanges {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: black;
+    background-color: var(--backcolor);
     padding: 10px;
     text-align: center;
     justify-content: center;
@@ -62,7 +62,7 @@
   .grid-exchange {
     width: 150px;
     height: 150px;
-    background-color: black;
+    background-color: var(--backcolor);
     color: white;
     padding: 20px;
     font-size: 30px;
