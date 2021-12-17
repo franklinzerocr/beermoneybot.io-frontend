@@ -1,5 +1,5 @@
 
-.main-container-use{
+.main-container-exchange{
     width: 100%;
     height: auto;
     text-align: center;
@@ -7,46 +7,44 @@
   }
   
   
-  .main-container-use-background{
+  .main-container-exchange-background{
     background-color: var(--backcolor);
     padding: 60px;
   }
 
-  .main-container-use-title {
+  .main-container-exchange-title {
     width: 100%;
     min-width: 288px;
     max-width: 950px;
     margin: 0 auto;
-    font-family: "Poppins";
+    font-family: var(--poppins);
     text-align: left;
   }
-
   
-  
-  .main-container-use h1 {
+  .main-container-exchange h1 {
     font-size: 2.2rem;
     font-weight: bold;
     line-height: 1.6rem;
     color: white;
     margin-bottom: 25px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--poppins);
   }
   
-  .main-container-use h2 {
+  .main-container-exchange h2 {
     font-size: 2.6rem;
     font-weight: bold;
     line-height: 2rem;
     color: orange;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--poppins);
   }
   
-  .main-container-use p{
+  .main-container-exchange p{
     margin-bottom: 30px;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.6rem;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--poppins);
   
   }
 

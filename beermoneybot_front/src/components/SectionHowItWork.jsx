@@ -6,7 +6,7 @@ import icon_twitter from '../assets/robot-twitter.svg'
 
 const SectionHowItWork = () => {
     return (
-        <section className="main-container-what" id="operate">
+        <section className="main-container-operate" id="operate">
             <div className="main-container-operate-title">
                 <Text child1={"¿Cómo"} child2={"funciona?"} />
             </div>

@@ -1,6 +1,6 @@
 @import 'var';
 
-.main-container-what{
+.main-container-operate{
     width: 100%;
     height: auto;
     padding-top: 50px;
@@ -14,7 +14,7 @@
     min-width: 288px;
     max-width: 900px;
     margin:0 auto;
-    font-family: 'Poppins';
+    font-family: var(--poppins);
     text-align: left;
   }
   
@@ -33,7 +33,7 @@
     line-height: 1.6rem;
     color: white;
     margin-bottom: 25px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--poppins);
   }
   
   .main-container-what h2 {
@@ -41,7 +41,7 @@
     font-weight: bold;
     line-height: 2rem;
     color: orange;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--poppins);
   }
   
   .main-container-what p{
@@ -50,7 +50,7 @@
     font-weight: 500;
     line-height: 1.6rem;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--poppins);
   
   }
 

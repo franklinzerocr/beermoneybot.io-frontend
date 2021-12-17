@@ -4,9 +4,9 @@ import logo from '../assets/Logos/LogoIndex.png'
 
 const SectionExchanges = () => {
     return (
-        <section className="main-container-use">
-            <div className="main-container-use-background">
-                <div className="main-container-use-title">
+        <section className="main-container-exchange">
+            <div className="main-container-exchange-background">
+                <div className="main-container-exchange-title">
                     <Text child1={"Exchanges"} child2={"Compatibles"} />
                 </div>
                 <section className="section-exchange">
