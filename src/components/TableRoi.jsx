@@ -5,19 +5,19 @@ export const TableRoi = () => {
   return (
     <div className='grid-container-tableroi'>
       <div className='item1'>
-        <div className='tableroi-sqare'> WIN </div>
+        <div className='tableroi-sqare'> TRADES </div>
         <div className='tableroi-center'> XX </div>
       </div>
       <div className='item2'>
-        <div className='tableroi-sqare'> LOSSES </div>
-        <div className='tableroi-center'> XX </div>
+        <div className='tableroi-sqare'> AVG </div>
+        <div className='tableroi-center'> XX% </div>
       </div>
       <div className='item3'>
-        <div className='tableroi-sqare'> AVG </div>
-        <div className='tableroi-center'> X% </div>
+        <div className='tableroi-sqare'> WIN </div>
+        <div className='tableroi-center'> XX </div>
       </div>
       <div className='item4'>
-        <div className='tableroi-sqare'> TRADES </div>
+        <div className='tableroi-sqare'> LOSES </div>
         <div className='tableroi-center'> XX </div>
       </div>
       <div className='item5'>
