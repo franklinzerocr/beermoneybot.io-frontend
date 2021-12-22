@@ -1,9 +1,60 @@
 .App {
   /*text-align: center;*/
-  background-color: black;
+  background-color: #121212;
   font-family: 'Open Sans', sans-serif;
   font-family: 'Poppins', sans-serif;
-
 }
 
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
 
+h2.first-word {
+  color: white;
+}
+
+h2.second-word {
+  color: #f89521;
+}
+
+h2.tabbed-left {
+  padding-left: 10%;
+}
+h2.tabbed-right {
+  padding-right: 10%;
+}
+
+.title-container {
+  padding: 0px 10% 20px 10%;
+  max-width: 1280px;
+  margin: 0px auto;
+}
+
+.title-right h2 {
+  text-align: right;
+}
+.title-left h2 {
+  text-align: left;
+}
+
+h2 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  margin: 20px;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    text-align: center !important;
+    font-size: 2.2em !important;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    margin: 12.5px 0px;
+  }
+
+  .title-container {
+    padding: 0px;
+  }
+}

@@ -1,0 +1,112 @@
+.main-container-use {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.main-container-use-background {
+  padding: 60px;
+}
+
+.main-container-use-title {
+  width: 100%;
+  min-width: 288px;
+  max-width: 950px;
+  margin: 0 auto;
+  font-family: 'Poppins';
+  text-align: left;
+}
+
+.main-container-use h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.6rem;
+  color: white;
+  margin-bottom: 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-container-use h2 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  line-height: 2rem;
+  color: orange;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-container-use p {
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.grid-exchanges {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+.grid-exchange {
+  width: 75px;
+  height: 75px;
+  color: white;
+  margin: 20px;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+.grid-exchange img {
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.unable-exchange {
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+
+.enable-exchange::after {
+  content: '✅';
+  position: absolute;
+  top: -10px;
+  right: 0%;
+}
+
+@media only screen and (min-width: 500px) {
+  .main-container-use-background {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-exchange {
+    width: 150px;
+    height: 150px;
+    margin: 20px 60px;
+    font-size: 18px;
+  }
+
+  .section-exchange {
+    display: inline-blocks;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .main-product-container .product-article {
+    margin-bottom: 20px;
+    max-width: 400px;
+  }
+
+  .plans-container-slider {
+    justify-content: center;
+  }
+}

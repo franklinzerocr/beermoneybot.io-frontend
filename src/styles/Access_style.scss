@@ -1,4 +1,4 @@
-.main-access-container{
+.main-access-container {
   position: relative;
   min-width: 320px;
   width: auto;
@@ -7,204 +7,214 @@
   background-image: url('../assets/ilustraciones-04.svg');
   background-size: contain;
   margin: 0 auto;
+  margin-top: 200px;
   padding-bottom: 100px;
   padding-top: 100px;
-  }
-  
-  .main-access-container-title{
-
-    width: 90%;
-    min-width: 288px;
-    max-width: 900px;
-    margin:0 auto;
-    font-family: 'Poppins';
-    text-align: right;
-    color: white;
-  }
-
-  .main-access-container-title h1 {
-    font-size: 2.2rem;
-    font-weight: bold;
-    line-height: 1.6rem;
-    color: white;
-    margin-bottom: 25px;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .main-access-container-title h2 {
-    font-size: 2.6rem;
-    font-weight: bold;
-    line-height: 2rem;
-    color: orange;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .exchange-container-img{
-    width: 100%;
-    min-width: 230px;
-    max-width: 300px;
-    height: 100vh;
-    overflow-y: scroll;
-    margin: 0 auto;
-    background-image: url("../assets/Logos/timeline2.png");
-    background-size: cover;
-  }
-
-
-  .twitter-timeline twitter-timeline-rendered{
-    width: 80% !important;
-    padding: 0px;
-    border: none;
-    max-width: 100%;
-    min-width: 200px;
-  }
-
-  .main-plans-container{
-    width: 100%;
-    min-width: 320px;
-    padding: 65px 0;
-    text-align: center;
-    background-color: var(--off-white);
+  border-bottom: 20px solid white;
 }
 
-.plans-title{
-    width: 90%;
-    min-width: 288px;
-    max-width: 900px;
-    height: auto;
-    margin:0 auto;
-    margin-bottom: 30px;
+.main-access-container .title-container {
+  position: absolute;
+  top: -140px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
 }
 
-.plans-title  h2{
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--black);
+.main-access-container-title {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Poppins';
+  text-align: right;
+  color: white;
 }
 
-.plans-title p{
-    padding-top: 30px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.6rem;
-    color: gray;
+.main-access-container-title h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.6rem;
+  color: white;
+  margin-bottom: 25px;
+  font-family: 'Poppins', sans-serif;
 }
 
-.plans-container-slider{
-    display: flex;
-    gap: 12px;
-    height: auto;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    padding: 10px;
+.main-access-container-title h2 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  line-height: 2rem;
+  color: #f89521;
+  font-family: 'Poppins', sans-serif;
 }
 
-.plans-container-card{
+.exchange-container-img {
+  width: 100%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 100vh;
+  overflow-y: scroll;
+  margin: 0 auto;
+  background-image: url('../assets/Logos/timeline2.png');
+  background-size: cover;
+}
+
+.twitter-timeline twitter-timeline-rendered {
+  width: 80% !important;
+  padding: 0px;
+  border: none;
+  max-width: 100%;
+  min-width: 200px;
+}
+
+.main-plans-container {
+  width: 100%;
+  min-width: 320px;
+  padding: 65px 0;
+  text-align: center;
+  background-color: var(--off-white);
+}
+
+.plans-title {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.plans-title h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+
+.plans-title p {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: gray;
+}
+
+.plans-container-slider {
+  display: flex;
+  gap: 12px;
+  height: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  padding: 10px;
+}
+
+.plans-container-card {
   position: relative;
   scroll-snap-align: center;
-  width: 70%;
+  width: 85%;
   min-width: 190px;
-  max-width: 620px;
+  max-width: 500px;
   height: auto;
-  margin: o auto;
+  margin: 0px auto;
   padding-bottom: 10px;
   background-color: white;
   border-radius: 15px;
-  border-top: 12px orange solid;
+  border-top: 12px #f89521 solid;
   box-shadow: 0 4px 8px rgb(89 73 30 / 16%);
 }
 
-.plans-container-card .recommended{
-    position: absolute;
-	top: 30px;
-	left: calc(50% - 50px);
-    display: block;
-    width: 100px;
-    height: 60px;
-    padding: 5px;
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: white;
-    background-image: url('../assets/Logos/LogoIndex.png');
-    background-size: cover;
+.plans-container-card .recommended {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  height: 40px;
+  padding: 5px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: white;
 }
 
-.plan-card-title{
+.plan-card-title {
   width: auto;
   max-width: 600px;
   font-size: 1rem;
   font-weight: lighter;
   line-height: 1.6rem;
   color: white;
-  background-color: orange;
+  text-shadow: 0px 0px 1px black;
+  background-color: #f89521;
   margin-top: 0;
   padding: 0px 10px 20px;
+  position: relative;
+  margin-bottom: 40px;
 }
 
-.plan-info-container input[type=text], select {
+.plan-info-container input[type='text'],
+select {
   width: 80%;
-  padding: 12px 20px;
+  padding: 10px;
   display: inline-block;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   box-sizing: border-box;
-  background-color: #f2f2f2;
-  margin-top: 40px;
-  margin-left: 30px;
-  margin-right: 30px;
+  background-color: #dfdfdf;
+  margin: 10px 15px;
+  font-size: 14px;
 }
 
-.plan-info-container textarea{
-  background-color: #f2f2f2;
+.plan-info-container textarea {
+  background-color: #dfdfdf;
   border: none;
-  border-radius: 10px;
-  margin: 25px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px 15px;
   padding: 10px;
-  width: 80%;
+  width: 76%;
   position: relative;
+  font-size: 15px;
 }
 
-
-
-.plan-card-price{
-    padding: 5px;
-    font-size: 5.3rem;
-    font-weight: bold;
-    line-height: 5rem;
-    color: black;
+.plan-card-price {
+  padding: 5px;
+  font-size: 5.3rem;
+  font-weight: bold;
+  line-height: 5rem;
+  color: black;
 }
-.plan-info-container span{
-    font-size: 1.2rem;
-    font-weight: 300;
+.plan-info-container span {
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
-.plan-card-saving{
-    font-size: 1.2rem;
-    color:gray;
+.plan-card-saving {
+  font-size: 1.2rem;
+  color: gray;
 }
 
-.plan-card-button{
-    width: 100px;
-    height: 30px;
-    margin-top: 20px;
-    background-color: orange;
-    border: 2px solid orange;
-    border-radius: 10px;
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: 1.8rem;
-    color: white;
-    font-family: 'DM Sans', sans-serif;
+.plan-card-button {
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+  background-color: #f89521;
+  border: 2px solid #f89521;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
 }
-
 
 @media (min-width: 1200px) {
-
   .main-access-container {
     margin: 0 auto;
-   
+    margin-top: 250px;
   }
-  
+
+  .main-access-container .title-container {
+    left: initial;
+    transform: initial;
+  }
 }

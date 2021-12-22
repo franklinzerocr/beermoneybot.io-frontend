@@ -1,14 +1,29 @@
-import '../styles/MenuHeader_style.scss'
+import '../styles/MenuHeader_style.scss';
+
+import logo from '../assets/Logos/log blanco-01.svg';
 
 export const MenuHeader = () => {
-    return (
-        <div className="grid-container">
-            <div className="grid-item"><div className="logo-menu"></div></div>
-            <div className="grid-item"><a href="#operate">Home</a></div>
-            <div className="grid-item"><a href="#operate">Roadmap</a></div>  
-            <div className="grid-item"><a href="#operate">Team</a></div>
-            <div className="grid-item"><a href="#operate">Contact</a></div>
-        </div>
-    )
-}
-
+  return (
+    <>
+      <div className='logo-container'>
+        <img className='logo-menu' src={logo} alt=''></img>
+      </div>
+      <div className='menu-container'>
+        <ul className='main-menu'>
+          <li className='menu-item'>
+            <a href='/'>Home</a>
+          </li>
+          <li className='menu-item'>
+            <a href='/roadmap'>Roadmap</a>
+          </li>
+          <li className='menu-item'>
+            <a href='/team'>Team</a>
+          </li>
+          <li className='menu-item'>
+            <a href='#access'>Access</a>
+          </li>
+        </ul>
+      </div>
+    </>
+  );
+};

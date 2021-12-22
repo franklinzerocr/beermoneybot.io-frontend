@@ -1,26 +1,26 @@
-import React from "react";
-import Header from "./components/Header";
-import ContainerMain from "./containers/ContainerMain";
-import SectionWhat from "./components/SectionWhat"; 
-import SectionOperate from "./components/SectionOperate";
-import SectionUse from "./components/SectionUse";
-import SectionAccess from "./components/SectionAccess";
-import Footer from "./components/Footer";
+import React from 'react';
+import Header from './components/Header';
+import ContainerMain from './containers/ContainerMain';
+import SectionOperations from './components/SectionOperations';
+import SectionAnalysis from './components/SectionAnalysis';
+import SectionExchanges from './components/SectionExchanges';
+import SectionAccess from './components/SectionAccess';
+import Footer from './components/Footer';
 import './App.css';
 
-const App = () =>{
+const App = () => {
   return (
-    <div className="App">
-      <Header/>
+    <div className='App'>
+      <Header />
       <ContainerMain>
-        <SectionWhat />
-        <SectionOperate/>
-        <SectionUse/>
-       <SectionAccess/>
-     </ContainerMain>
-      <Footer/>
+        <SectionOperations />
+        <SectionAnalysis />
+        <SectionExchanges />
+        <SectionAccess />
+      </ContainerMain>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
