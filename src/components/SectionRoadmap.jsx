@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Team_style.scss';
+import '../styles/Roadmap_style.scss';
 
 
 
