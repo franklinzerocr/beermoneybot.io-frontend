@@ -11,7 +11,23 @@
   background-position: center;
   background-size: cover;
   border-bottom: 20px solid white;
+  &--small {
+    position: relative;
+    // display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    text-align: center;
+    background-image: url('../assets/banner.png');
+    background-position: center;
+    background-size: cover;
+    border-bottom: 20px solid white;
+    padding-bottom: 30px;
+  }
 }
+
 
 .header-container {
   width: 90%;

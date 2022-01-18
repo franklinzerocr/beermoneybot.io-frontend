@@ -6,7 +6,6 @@ import SectionAnalysis from '../components/SectionAnalysis';
 import SectionExchanges from '../components/SectionExchanges';
 import SectionAccess from '../components/SectionAccess';
 import Footer from '../components/Footer';
-import '../App.css';
 
 
 const Home = () => {

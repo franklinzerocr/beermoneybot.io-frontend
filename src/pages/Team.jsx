@@ -1,9 +1,21 @@
 import React from 'react'
+import Header from '../components/Header';
+import ContainerMain from '../containers/ContainerMain';
+import Footer from '../components/Footer';
+import SectionTeam from '../components/SectionTeam';
+
+
+
+
 
 const Team = () => {
   return (
     <>
-      <h1>Team</h1>
+      <Header small={'small'} />
+        <ContainerMain>
+          <SectionTeam />
+        </ContainerMain>
+      <Footer />
     </>
   )
 }

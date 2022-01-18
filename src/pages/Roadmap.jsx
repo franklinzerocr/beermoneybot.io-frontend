@@ -1,9 +1,19 @@
 import React from 'react'
+import Header from '../components/Header';
+import ContainerMain from '../containers/ContainerMain';
+import Footer from '../components/Footer';
+import SectionRoadmap from '../components/SectionRoadmap';
+
+
 
 const Roadmap = () => {
   return (
     <>
-      <h1>RoadMap</h1>
+      <Header small={'small'} />
+        <ContainerMain>
+          <SectionRoadmap />
+        </ContainerMain>
+      <Footer />
     </>
   )
 }

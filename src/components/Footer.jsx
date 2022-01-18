@@ -1,5 +1,7 @@
 import '../styles/Footer_style.scss';
 import logo from '../assets/Logos/LogoIndex.png';
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
@@ -19,16 +21,16 @@ const Footer = () => {
           <p>Beermoney Bot es un Bot de Trading Algoritmico Automatizado con Criptomonedas que opera en distintos exchanges.</p>
           <div className='footer-menu'>
             <li>
-              <a href='/'>Home</a>
+              <Link to='/'>Home</Link>
             </li>
             <li>
-              <a href='/roadmap'>Roadmap</a>
+              <Link to='/roadmap'>Roadmap</Link>
             </li>
             <li>
-              <a href='/team'>Team</a>
+              <Link to='/team'>Team</Link>
             </li>
             <li>
-              <a href='#access'>Access</a>
+              <a href='/#access'>Access</a>
             </li>
           </div>
         </div>
