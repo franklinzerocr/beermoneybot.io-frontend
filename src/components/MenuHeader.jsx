@@ -1,4 +1,5 @@
 import '../styles/MenuHeader_style.scss';
+import { Link } from "react-router-dom";
 
 import logo from '../assets/Logos/log blanco-01.svg';
 
@@ -11,16 +12,16 @@ export const MenuHeader = () => {
       <div className='menu-container'>
         <ul className='main-menu'>
           <li className='menu-item'>
-            <a href='/'>Home</a>
+            <Link to='/'>Home</Link>
           </li>
           <li className='menu-item'>
-            <a href='/roadmap'>Roadmap</a>
+            <Link to='/roadmap'>Roadmap</Link>
           </li>
           <li className='menu-item'>
-            <a href='/team'>Team</a>
+            <Link to='/team'>Team</Link>
           </li>
           <li className='menu-item'>
-            <a href='#access'>Access</a>
+            <a href='/#access'>Access</a>
           </li>
         </ul>
       </div>
