@@ -1,24 +1,19 @@
 import React from 'react';
-import Header from './components/Header';
-import ContainerMain from './containers/ContainerMain';
-import SectionOperations from './components/SectionOperations';
-import SectionAnalysis from './components/SectionAnalysis';
-import SectionExchanges from './components/SectionExchanges';
-import SectionAccess from './components/SectionAccess';
-import Footer from './components/Footer';
+import {
+  Routes,
+  Route
+} from "react-router-dom";
 import './App.css';
+import Home from './pages/Home'
+
 
 const App = () => {
   return (
     <div className='App'>
-      <Header />
-      <ContainerMain>
-        <SectionOperations />
-        <SectionAnalysis />
-        <SectionExchanges />
-        <SectionAccess />
-      </ContainerMain>
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
     </div>
   );
 };
