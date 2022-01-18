@@ -6,13 +6,18 @@ import SectionAnalysis from '../components/SectionAnalysis';
 import SectionExchanges from '../components/SectionExchanges';
 import SectionAccess from '../components/SectionAccess';
 import Footer from '../components/Footer';
-import {ReactTitle} from 'react-meta-tags';
+import {MetaTags} from 'react-meta-tags';
+
 
 
 const Home = () => {
   return (
     <>
-      <ReactTitle title="Home | Beermoney Bot"/>
+      <MetaTags>
+          <title>Home | Beermoney Bot</title>
+          <meta name="description" content="Beermoney Bot description" />
+          <meta property="og:title" content="MyApp" />
+      </MetaTags>
       <Header />
       <ContainerMain>
         <SectionOperations />

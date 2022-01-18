@@ -3,16 +3,21 @@ import Header from '../components/Header';
 import ContainerMain from '../containers/ContainerMain';
 import Footer from '../components/Footer';
 import SectionTeam from '../components/SectionTeam';
-import {ReactTitle} from 'react-meta-tags';
+import {MetaTags} from 'react-meta-tags';
+
 
 const Team = () => {
   return (
     <>
-      <ReactTitle title="Team | Beermoney Bot"/>
+      <MetaTags>
+        <title>Team | Beermoney Bot</title>
+        <meta name="description" content="Beermoney Bot Team description" />
+        <meta property="og:title" content="MyApp" />
+      </MetaTags>
       <Header small={'small'} />
-        <ContainerMain>
-          <SectionTeam />
-        </ContainerMain>
+      <ContainerMain>
+        <SectionTeam />
+      </ContainerMain>
       <Footer />
     </>
   )
