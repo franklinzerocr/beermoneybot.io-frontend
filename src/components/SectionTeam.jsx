@@ -27,9 +27,15 @@ const SectionTeam = () => {
             </div>
             <div className="team-card__bottom">
               <div className='socials team-card-bottom'>
-                <i className='fab fa-twitter'></i>
-                <i className='fab fa-medium-m'></i>
-                <i className='fab fa-telegram-plane'></i>
+                <a href="/" target="_blank">
+                  <i className='fab fa-twitter'></i>
+                </a>
+                <a href="/" target="_blank">
+                  <i className='fab fa-medium-m'></i>
+                </a>
+                <a href="/" target="_blank">
+                  <i className='fab fa-telegram-plane'></i>
+                </a>
               </div>
             </div>
           </div>
@@ -44,9 +50,15 @@ const SectionTeam = () => {
             </div>
             <div className="team-card__bottom">
               <div className='socials team-card-bottom'>
-                <i className='fab fa-twitter'></i>
-                <i className='fab fa-medium-m'></i>
-                <i className='fab fa-telegram-plane'></i>
+                <a href="/" target="_blank">
+                  <i className='fab fa-twitter'></i>
+                </a>
+                <a href="/" target="_blank">
+                  <i className='fab fa-medium-m'></i>
+                </a>
+                <a href="/" target="_blank">
+                  <i className='fab fa-telegram-plane'></i>
+                </a>
               </div>
             </div>
           </div>
@@ -61,9 +73,15 @@ const SectionTeam = () => {
             </div>
             <div className="team-card__bottom">
               <div className='socials team-card-bottom'>
-                <i className='fab fa-twitter'></i>
-                <i className='fab fa-medium-m'></i>
-                <i className='fab fa-telegram-plane'></i>
+                <a href="/" target="_blank">
+                  <i className='fab fa-twitter'></i>
+                </a>
+                <a href="/" target="_blank">
+                  <i className='fab fa-medium-m'></i>
+                </a>
+                <a href="/" target="_blank">
+                  <i className='fab fa-telegram-plane'></i>
+                </a>
               </div>
             </div>
           </div>
