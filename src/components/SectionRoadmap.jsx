@@ -1,5 +1,7 @@
 import React from 'react'
 import '../styles/Roadmap_style.scss';
+import roadmap from '../assets/roadmap/bmb-roadmap-def-03 (5).png';
+
 
 
 
@@ -8,7 +10,9 @@ import '../styles/Roadmap_style.scss';
 const SectionRoadmap = () => {
   return (
     <>
-      <h1>Roadmap</h1>
+      <div className='roadmap-container'>
+        <img src={roadmap} alt="roadmap" loading="lazy"/>
+      </div>
     </>
   )
 }
