@@ -15,8 +15,9 @@ const Home = () => {
     <>
       <MetaTags>
           <title>Home | Beermoney Bot</title>
-          <meta name="description" content="Beermoney Bot description" />
-          <meta property="og:title" content="MyApp" />
+          <meta property="og:title" content="Home | Beermoney Bot"/>
+          <meta name="og:description" content="¿Un Robot que haga trading mejor que un humano? Bro... Hold my Beer" />
+          <meta name="description" content="¿Un Robot que haga trading mejor que un humano? Bro... Hold my Beer" />
       </MetaTags>
       <Header />
       <ContainerMain>

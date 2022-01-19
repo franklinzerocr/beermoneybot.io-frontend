@@ -10,8 +10,9 @@ const Roadmap = () => {
     <>
       <MetaTags>
         <title>Roadmap | Beermoney Bot</title>
-        <meta name="description" content="Beermoney Bot Roadmap description" />
-        <meta property="og:title" content="MyApp" />
+        <meta property="og:title" content="Roadmap | Beermoney Bot"/>
+        <meta name="og:description" content="Beermoney Bot Roadmap" />
+        <meta name="description" content="Beermoney Bot Roadmap" />
       </MetaTags>
       <Header small={'small'} />
       <ContainerMain>

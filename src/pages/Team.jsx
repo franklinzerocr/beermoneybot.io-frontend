@@ -11,8 +11,9 @@ const Team = () => {
     <>
       <MetaTags>
         <title>Team | Beermoney Bot</title>
-        <meta name="description" content="Beermoney Bot Team description" />
-        <meta property="og:title" content="MyApp" />
+        <meta property="og:title" content="Team | Beermoney Bot"/>
+        <meta name="og:description" content="Equipo de Beermoney Bot" />
+        <meta name="description" content="Equipo de Beermoney Bot" />
       </MetaTags>
       <Header small={'small'} />
       <ContainerMain>
