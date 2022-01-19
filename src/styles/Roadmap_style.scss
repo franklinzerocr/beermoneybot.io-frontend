@@ -2,6 +2,18 @@
   display: flex;
   justify-content: center;
   img {
-    width: 100%;
+    max-width: 100vw;
+  }
+}
+
+////media queries
+
+@media (min-width: 0px) and (max-width: 600px) {
+  .roadmap-container {
+    display: flex;
+    justify-content: center;
+    img {
+      max-width: 90vw;
+    }
   }
 }
