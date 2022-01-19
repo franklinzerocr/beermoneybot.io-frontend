@@ -1,8 +1,12 @@
+import React from 'react';
 import '../styles/Operations_style.scss';
 import { TableRoi } from './TableRoi';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
 const SectionWhat = () => {
+  const defaultCoin = 'USDT'
+  const [coin, setCoin] = React.useState(defaultCoin);
+
   return (
     <section className='main-container-roi'>
       <div className='title-container title-right'>
@@ -11,8 +15,7 @@ const SectionWhat = () => {
       </div>
       <section className='container-articles-roi'>
         <article className='article-roi table-roi-container'>
-          {' '}
-          <TableRoi />{' '}
+          <TableRoi coin={coin} setCoin={setCoin} />{' '}
         </article>
 
         <article className='article-roi twitter-timeline '>
