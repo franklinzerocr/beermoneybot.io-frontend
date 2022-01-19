@@ -205,6 +205,9 @@ select {
   line-height: 1.8rem;
   color: white;
   font-family: 'DM Sans', sans-serif;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 1200px) {

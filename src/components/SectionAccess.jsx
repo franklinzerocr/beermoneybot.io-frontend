@@ -1,8 +1,13 @@
 import React from 'react';
 import '../styles/Access_style.scss';
 import logo from '../assets/Logos/loguito.png';
+import { useNavigate } from "react-router-dom";
 
 const SectionAccess = () => {
+  const navigate = useNavigate();
+  const handleSubmit = () => {
+    navigate('/team')
+  }
   return (
     <>
       <section className='main-access-container'>
@@ -21,7 +26,7 @@ const SectionAccess = () => {
               <input type='text' id='femail' name='femail' placeholder='Email'></input>
               <input type='text' id='ftuser' name='ftuser' placeholder='Telegram'></input>
               <input type='text' id='ftext' name='ftext' placeholder='¿Cómo llegaste a este proyecto?'></input>
-              <button className='plan-card-button'>Enviar</button>
+              <button className='plan-card-button' onClick={() => handleSubmit()}>Enviar</button>
             </div>
           </article>
         </section>
