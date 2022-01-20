@@ -32,7 +32,7 @@ const SectionAccess = (e) => {
             </h3>
 
             <form className='plan-info-container' ref={form} onSubmit={handleSubmit}>
-              <input type='text' id='femail' name='femail' placeholder='Email' required></input>
+              <input type='email' id='femail' name='femail' placeholder='Email' required></input>
               <input type='text' id='ftuser' name='ftuser' placeholder='Telegram' required></input>
               <input type='text' id='ftext' name='ftext' placeholder='¿Cómo llegaste a este proyecto?' required  ></input>
               <button className='plan-card-button' type="submit"><span>Enviar</span></button>

@@ -164,6 +164,19 @@ select {
   font-size: 14px;
 }
 
+.plan-info-container input[type='email'],
+select {
+  width: 80%;
+  padding: 10px;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #dfdfdf;
+  margin: 10px 15px;
+  font-size: 14px;
+}
+
 .plan-info-container textarea {
   background-color: #dfdfdf;
   border: none;
