@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import '../styles/Access_style.scss';
 import logo from '../assets/Logos/loguito.png';
 import { useNavigate } from "react-router-dom";
+import emailjs from '@emailjs/browser';
 
-const SectionAccess = () => {
+const SectionAccess = (e) => {
   const navigate = useNavigate();
-  const handleSubmit = () => {
-    navigate('/team')
+  const form = useRef();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_rseoszi', 'template_jb4wvfj', form.current, 'user_a901ZJVys82iwiQRZjzSO')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    navigate('/thanks')
   }
   return (
     <>
@@ -22,12 +31,12 @@ const SectionAccess = () => {
               <img src={logo} alt='' className='recommended'></img>
             </h3>
 
-            <div className='plan-info-container'>
-              <input type='text' id='femail' name='femail' placeholder='Email'></input>
-              <input type='text' id='ftuser' name='ftuser' placeholder='Telegram'></input>
-              <input type='text' id='ftext' name='ftext' placeholder='¿Cómo llegaste a este proyecto?'></input>
-              <button className='plan-card-button' onClick={() => handleSubmit()}>Enviar</button>
-            </div>
+            <form className='plan-info-container' ref={form} onSubmit={handleSubmit}>
+              <input type='text' id='femail' name='femail' placeholder='Email' required></input>
+              <input type='text' id='ftuser' name='ftuser' placeholder='Telegram' required></input>
+              <input type='text' id='ftext' name='ftext' placeholder='¿Cómo llegaste a este proyecto?' required  ></input>
+              <button className='plan-card-button' type="submit"><span>Enviar</span></button>
+            </form>
           </article>
         </section>
       </section>
