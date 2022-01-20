@@ -19,6 +19,7 @@
   line-height: 50px;
   border-radius: 25px;
   background-color: #42403c;
+  min-width: 100px;
   &:not(:first-child) {
     margin-left: 10px;
   }
