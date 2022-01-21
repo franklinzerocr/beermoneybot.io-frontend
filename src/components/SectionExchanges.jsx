@@ -17,22 +17,34 @@ const SectionUse = () => {
         <section className='section-exchange'>
           <div className='grid-exchanges'>
             <div className='grid-exchange enable-exchange'>
-              <img src={binance} alt='' />
+              <a href="https://www.binance.com" target="_blank" rel="noreferrer">
+                <img src={binance} alt='' />
+              </a>
             </div>
             <div className='grid-exchange unable-exchange'>
-              <img src={ftx} alt='' />
+              <a href="https://www.ftx.com" target="_blank" rel="noreferrer"> 
+                <img src={ftx} alt='' />
+              </a>
             </div>
             <div className='grid-exchange unable-exchange'>
-              <img src={bybit} alt='' />
+              <a href="https://www.bybit.com" target="_blank" rel="noreferrer">
+                <img src={bybit} alt='' />
+              </a>
             </div>
             <div className='grid-exchange unable-exchange'>
-              <img src={kraken} alt='' />
+              <a href="https://www.kraken.com" target="_blank" rel="noreferrer">
+                <img src={kraken} alt='' />
+              </a>
             </div>
             <div className='grid-exchange unable-exchange'>
-              <img src={kucoin} alt='' />
+            <a href="https://www.kucoin.com" target="_blank" rel="noreferrer">
+                <img src={kucoin} alt='' />
+              </a>
             </div>
             <div className='grid-exchange unable-exchange'>
-              <img src={bitfinex} alt='' />
+              <a href="https://www.bitfinex.com" target="_blank" rel="noreferrer">
+                <img src={bitfinex} alt='' />
+              </a>
             </div>
           </div>
         </section>
