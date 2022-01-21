@@ -33,7 +33,7 @@ const TeamMember = ({ portrait, role, fullName, position, socials }) => {
 
         </div>
         <div className="team-card__middle">
-          <img src={portrait} alt="Portrait" />
+          <img src={portrait} alt="Portrait" loading='lazy' />
           <h3>{fullName}</h3>
           <i>{position}</i>
         </div>
