@@ -16,14 +16,14 @@ const Thanks = () => {
     intervalRef.current = setInterval(decreaseNum, 1000);
     return () => clearInterval(intervalRef.current);
   }, []);
-  if (counter === 0) {
+  if (counter <= 0) {
     navigate('/')
   }
 
   return (
     <>
       <MetaTags>
-        <title>Thanks | Beermoney Bot</title>
+        <title>Gracias | Beermoney Bot</title>
       </MetaTags>
       <ContainerMain>
         <section className='thanks-container'>
