@@ -65,10 +65,17 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.container-articles-roi {
+  display: flex;
+}
+
 
 @media (min-width: 1200px) {
   .container-articles-roi {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     flex-wrap: wrap;
     width: 100%;
     max-width: 1280px;
@@ -83,6 +90,11 @@
 @media (min-width: 0px) and (max-width: 799px) {
   .twitter-timeline {
     margin-top: 40px;
+  }
+
+  .container-articles-roi {
+    display: flex;  
+    flex-direction: column;
   }
   
 }
