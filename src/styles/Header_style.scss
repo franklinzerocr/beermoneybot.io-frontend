@@ -158,3 +158,9 @@
     top: initial;
   }
 }
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .App-header {
+    height: 75.5vh;
+  }
+}

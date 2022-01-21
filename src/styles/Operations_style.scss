@@ -79,3 +79,10 @@
     width: 1200px;
   }
 }
+
+@media (min-width: 0px) and (max-width: 799px) {
+  .twitter-timeline {
+    margin-top: 40px;
+  }
+  
+}

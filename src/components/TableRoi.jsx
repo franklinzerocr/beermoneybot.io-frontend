@@ -27,6 +27,7 @@ export const TableRoi = ({ coin, setCoin }) => {
           <div className='item5'>
             <div className='tableroi-sqare'> ROI USDT </div>
             <div className='tableroi-center'> XXX% </div>
+            {/* <div id="circle"></div> */}
           </div>
         </div>
         <div>
