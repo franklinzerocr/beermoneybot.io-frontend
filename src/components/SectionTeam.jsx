@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/Team_style.scss';
 import portrait from '../assets/team/portrait.png';
+import TeamMember from "../components/TeamMember";
 
 
 
@@ -15,148 +16,90 @@ const SectionTeam = () => {
         <h2 className='second-word tabbed-left'>al Equipo</h2>
       </div>
       <div className='title-container team'>
-        {/* <div className='team-row'> */}
-          <div className='team-card slide-top'>
-            <div className="team-card__top coding">
-
-            </div>
-            <div className="team-card__middle">
-              <img src={portrait} alt="Portrait" />
-              <h3>Team Member Name</h3>
-              <i>Developer</i>
-            </div>
-            <div className="team-card__bottom">
-              <div className='socials team-card-bottom'>
-                <a href="/" target="_blank">
-                  <i className='fab fa-twitter'></i>
-                </a>
-                <a href="/" target="_blank">
-                  <i className='fab fa-medium-m'></i>
-                </a>
-                <a href="/" target="_blank">
-                  <i className='fab fa-telegram-plane'></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className='team-card slide-top'>
-            <div className="team-card__top crypto">
-
-            </div>
-            <div className="team-card__middle">
-              <img src={portrait} alt="Portrait" />
-              <h3>Team Member Name</h3>
-              <i>Crypto Analyst</i>
-            </div>
-            <div className="team-card__bottom">
-              <div className='socials team-card-bottom'>
-                <a href="/" target="_blank">
-                  <i className='fab fa-twitter'></i>
-                </a>
-                <a href="/" target="_blank">
-                  <i className='fab fa-medium-m'></i>
-                </a>
-                <a href="/" target="_blank">
-                  <i className='fab fa-telegram-plane'></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className='team-card slide-top'>
-            <div className="team-card__top marketing">
-
-            </div>
-            <div className="team-card__middle">
-              <img src={portrait} alt="Portrait" />
-              <h3>Team Member Name</h3>
-              <i>Marketing</i>
-            </div>
-            <div className="team-card__bottom">
-              <div className='socials team-card-bottom'>
-                <a href="/" target="_blank">
-                  <i className='fab fa-twitter'></i>
-                </a>
-                <a href="/" target="_blank">
-                  <i className='fab fa-medium-m'></i>
-                </a>
-                <a href="/" target="_blank">
-                  <i className='fab fa-telegram-plane'></i>
-                </a>
-              </div>
-            </div>
-          {/* </div> */}
-        </div>
-        {/* <div className='team-row'> */}
-          <div className='team-card slide-top'>
-            <div className="team-card__top coding">
-
-            </div>
-            <div className="team-card__middle">
-              <img src={portrait} alt="Portrait" />
-              <h3>Team Member Name</h3>
-              <i>Developer</i>
-            </div>
-            <div className="team-card__bottom">
-              <div className='socials team-card-bottom'>
-                <a href="/" target="_blank">
-                  <i className='fab fa-twitter'></i>
-                </a>
-                <a href="/" target="_blank">
-                  <i className='fab fa-medium-m'></i>
-                </a>
-                <a href="/" target="_blank">
-                  <i className='fab fa-telegram-plane'></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className='team-card slide-top'>
-            <div className="team-card__top crypto">
-
-            </div>
-            <div className="team-card__middle">
-              <img src={portrait} alt="Portrait" />
-              <h3>Team Member Name</h3>
-              <i>Crypto Analyst</i>
-            </div>
-            <div className="team-card__bottom">
-              <div className='socials team-card-bottom'>
-                <a href="/" target="_blank">
-                  <i className='fab fa-twitter'></i>
-                </a>
-                <a href="/" target="_blank">
-                  <i className='fab fa-medium-m'></i>
-                </a>
-                <a href="/" target="_blank">
-                  <i className='fab fa-telegram-plane'></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className='team-card slide-top'>
-            <div className="team-card__top marketing">
-
-            </div>
-            <div className="team-card__middle">
-              <img src={portrait} alt="Portrait" />
-              <h3>Team Member Name</h3>
-              <i>Marketing</i>
-            </div>
-            <div className="team-card__bottom">
-              <div className='socials team-card-bottom'>
-                <a href="/" target="_blank">
-                  <i className='fab fa-twitter'></i>
-                </a>
-                <a href="/" target="_blank">
-                  <i className='fab fa-medium-m'></i>
-                </a>
-                <a href="/" target="_blank">
-                  <i className='fab fa-telegram-plane'></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        {/* </div> */}
+        <TeamMember
+          portrait={portrait}
+          role={'coding'}
+          fullName={'John Doe'}
+          position={'Developer'}
+          socials=
+          {
+            {
+              twitter: 'Beermoney_Bot',
+              medium: '',
+              telegram: ''
+            }
+          }
+        />
+        <TeamMember
+          portrait={portrait}
+          role={'crypto'}
+          fullName={'Natasha Romanoff'}
+          position={'Analista Cripto'}
+          socials=
+          {
+            {
+              twitter: 'Beermoney_Bot',
+              medium: '',
+              telegram: ''
+            }
+          }
+        />
+        <TeamMember
+          portrait={portrait}
+          role={'marketing'}
+          fullName={'John Rambo'}
+          position={'Líder de Marketing'}
+          socials=
+          {
+            {
+              twitter: 'Beermoney_Bot',
+              medium: '',
+              telegram: ''
+            }
+          }
+        />
+        <TeamMember
+          portrait={portrait}
+          role={'coding'}
+          fullName={'Charlie Brown'}
+          position={'Tester'}
+          socials=
+          {
+            {
+              twitter: 'Beermoney_Bot',
+              medium: '',
+              telegram: ''
+            }
+          }
+        />
+        <TeamMember
+          portrait={portrait}
+          role={'crypto'}
+          fullName={'Diana Prince'}
+          position={'Analista Técnico'}
+          socials=
+          {
+            {
+              twitter: 'Beermoney_Bot',
+              medium: '',
+              telegram: ''
+            }
+          }
+        />
+        <TeamMember
+          portrait={portrait}
+          role={'marketing'}
+          fullName={'Tony Stark'}
+          position={'Ventas'}
+          socials=
+          {
+            {
+              twitter: 'Beermoney_Bot',
+              medium: '',
+              telegram: ''
+            }
+          }
+        />
       </div>
     </section>
   )
