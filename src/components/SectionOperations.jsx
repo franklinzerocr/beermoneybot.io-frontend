@@ -21,7 +21,7 @@ const SectionWhat = () => {
         <article className='article-roi twitter-timeline '>
           {/* <a className="twitter-timeline" data-height="460" data-theme="light" href="https://twitter.com/Beermoney_Bot?ref_src=twsrc%5Etfw"> @Beermoney_Bot</a> 
                 <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script> */}
-          <TwitterTimelineEmbed sourceType='profile' screenName='Beermoney_Bot' linkColor='#FF9933' options={{ height: 400 }} noFooter='true' theme='dark' />
+          <TwitterTimelineEmbed sourceType='profile' screenName='Beermoney_Bot' linkColor='#FF9933' options={{ height: 400 }} noFooter={true} theme='dark' />
         </article>
       </section>
     </section>
