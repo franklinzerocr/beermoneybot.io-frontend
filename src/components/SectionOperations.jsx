@@ -10,8 +10,11 @@ const SectionWhat = () => {
   return (
     <section className='main-container-roi'>
       <div className='title-container title-right'>
-        <h2 className='first-word '>Operaciones</h2>
-        <h2 className='second-word tabbed-right'>Realizadas</h2>
+        <div className="title-container-aux">
+          <h2 className='first-word '>Operaciones</h2>
+          <h2 className='second-word tabbed-right'>Realizadas</h2>
+        </div>
+        <div id="circle-ops"></div>
       </div>
       <section className='container-articles-roi'>
         <article className='article-roi table-roi-container'>

@@ -221,6 +221,18 @@ select {
   }
 }
 
+#circle-access {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: rgb(211, 162, 57);
+  opacity: 0.3;
+  position: absolute;
+  left: 600px;
+  top: -50px;
+  z-index: 2;
+}
+
 
 @media (min-width: 1200px) {
   .main-access-container {
@@ -231,5 +243,19 @@ select {
   .main-access-container .title-container {
     left: initial;
     transform: initial;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 799px) {
+  #circle-access {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: rgb(211, 162, 57);
+    opacity: 0.3;
+    position: absolute;
+    left: 110px;
+    top: -50px;
+    z-index: 2;
   }
 }

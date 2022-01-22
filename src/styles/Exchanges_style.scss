@@ -79,6 +79,18 @@
   right: 0%;
 }
 
+#circle-exchanges {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: rgb(211, 162, 57);
+  opacity: 0.3;
+  position: absolute;
+  left: 1000px;
+  top: -50px;
+  z-index: 2;
+}
+
 @media only screen and (min-width: 500px) {
   .main-container-use-background {
     padding: 20px;
@@ -99,6 +111,8 @@
     width: 900px;
     margin: 0 auto;
     padding: 20px;
+    position: relative;
+    z-index: 2;
   }
 
   .main-product-container .product-article {
@@ -108,5 +122,19 @@
 
   .plans-container-slider {
     justify-content: center;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 799px) {
+  #circle-exchanges {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(211, 162, 57);
+    opacity: 0.3;
+    position: absolute;
+    left: 200px;
+    top: -50px;
+    z-index: 2;
   }
 }

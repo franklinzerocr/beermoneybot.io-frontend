@@ -11,8 +11,11 @@ const SectionUse = () => {
     <section className='main-container-use'>
       <div className='main-container-use-background'>
         <div className='title-container title-right'>
-          <h2 className='first-word '>Exchanges</h2>
-          <h2 className='second-word tabbed-right'>Compatibles</h2>
+          <div className="title-container-aux">
+            <h2 className='first-word '>Exchanges</h2>
+            <h2 className='second-word tabbed-right'>Compatibles</h2>
+          </div>
+          <div id="circle-exchanges"></div>
         </div>
         <section className='section-exchange'>
           <div className='grid-exchanges'>
@@ -22,7 +25,7 @@ const SectionUse = () => {
               </a>
             </div>
             <div className='grid-exchange unable-exchange'>
-              <a href="https://www.ftx.com" target="_blank" rel="noreferrer"> 
+              <a href="https://www.ftx.com" target="_blank" rel="noreferrer">
                 <img src={ftx} alt='' />
               </a>
             </div>
@@ -37,7 +40,7 @@ const SectionUse = () => {
               </a>
             </div>
             <div className='grid-exchange unable-exchange'>
-            <a href="https://www.kucoin.com" target="_blank" rel="noreferrer">
+              <a href="https://www.kucoin.com" target="_blank" rel="noreferrer">
                 <img src={kucoin} alt='' />
               </a>
             </div>

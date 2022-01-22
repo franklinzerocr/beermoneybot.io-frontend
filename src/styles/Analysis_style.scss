@@ -1,4 +1,4 @@
-@import 'var';
+@import "var";
 
 .main-container-what {
   width: 100%;
@@ -13,7 +13,7 @@
   min-width: 288px;
   max-width: 900px;
   margin: 0 auto;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   text-align: left;
 }
 
@@ -22,7 +22,7 @@
   min-width: 288px;
   max-width: 900px;
   margin: 0 auto;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   text-align: right;
 }
 
@@ -32,7 +32,7 @@
   line-height: 1.6rem;
   color: white;
   margin-bottom: 25px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .main-container-what h2 {
@@ -40,7 +40,7 @@
   font-weight: bold;
   line-height: 2rem;
   color: orange;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .main-container-what p {
@@ -49,7 +49,7 @@
   font-weight: 500;
   line-height: 1.6rem;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .main-product-container {
@@ -62,10 +62,12 @@
   padding-bottom: 30px;
   text-align: center;
   margin: 0px auto;
+  position: relative;
+  z-index: 2;
 }
 
 .main-product-container .product-article {
-  background-color: #282623;
+  background-color: #474643;
   margin: 0 auto;
   width: 70%;
   max-width: 360px;
@@ -87,9 +89,10 @@
   background-repeat: no-repeat;
 }
 
+
 .product-article h3 {
   color: orange;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
   line-height: 2.4rem;
   text-align: center;
@@ -111,19 +114,52 @@
 }
 
 .card-image {
-  text-align: center;
+  &-graph {
+    text-align: center;
+    img {
+      height: 150px;
+    }
+  }
+  &-twitter {
+    text-align: center;
+    img {
+      height: 160px;
+    }
+  }
+  &-feelings {
+    text-align: center;
+    img {
+      height: 150px;
+    }
+  }
 }
 
 .card-text-short {
   padding: 20px;
 }
 
-@media (min-width: 1200px) {
+#circle-analysis {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: rgb(211, 162, 57);
+  opacity: 0.3;
+  position: absolute;
+  left: 100px;
+  top: -100px;
+  z-index: 2;
+}
+
+@media (min-width: 1300px) {
   .product-cards {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
+  }
+
+  .product-article:not(:first-child) {
+    margin-left: 35px;
   }
 
   .main-product-container .product-article {
@@ -135,3 +171,18 @@
     justify-content: center;
   }
 }
+
+@media (min-width: 0px) and (max-width: 799px) {
+  #circle-analysis {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(211, 162, 57);
+    opacity: 0.3;
+    position: absolute;
+    left: 50px;
+    top: -100px;
+    z-index: 2;
+  }
+}
+

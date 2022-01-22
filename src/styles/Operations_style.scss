@@ -67,7 +67,22 @@
 
 .container-articles-roi {
   display: flex;
+  z-index: 2;
+  position: relative;
 }
+
+#circle-ops {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background-color: rgb(211, 162, 57);
+  opacity: 0.3;
+  position: absolute;
+  left: 900px;
+  top: -100px;
+  z-index: 2;
+}
+
 
 
 @media (min-width: 1200px) {
@@ -95,6 +110,18 @@
   .container-articles-roi {
     display: flex;  
     flex-direction: column;
+  }
+
+  #circle-ops {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: rgb(211, 162, 57);
+    opacity: 0.3;
+    position: absolute;
+    left: 180px;
+    top: -50px;
+    z-index: 2;
   }
   
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/Roadmap_style.scss';
-import roadmap from '../assets/roadmap/bmb-roadmap-def-03 (5).png';
+import roadmap from '../assets/roadmap/bmb-roadmap-def-01-01 (2).png';
 
 
 

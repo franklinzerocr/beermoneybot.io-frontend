@@ -1,8 +1,10 @@
 .roadmap-container {
   display: flex;
   justify-content: center;
-  background: rgb(0,0,0);
-  background: linear-gradient(170deg, rgba(248,149,33,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1),rgba(0,0,0,1), rgba(248,149,33,1) );
+  border-bottom: 20px solid white;
+  background: rgb(34, 34, 34);
+
+  background: linear-gradient(170deg, rgba(248,149,33,1), rgb(34, 34, 34), rgb(34, 34, 34), rgb(34, 34, 34), rgb(34, 34, 34),rgb(34, 34, 34), rgba(248,149,33,1) );
   img {
     max-width: 100vw;
   }

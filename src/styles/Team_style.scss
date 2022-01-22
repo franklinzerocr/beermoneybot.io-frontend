@@ -5,14 +5,11 @@
   min-width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
+  border-bottom: 20px solid white;
   a {
     text-decoration: none;
     color: white;
   }
-}
-
-.test {
-  background-color: red;
 }
 
 .team {
@@ -41,7 +38,7 @@
     border-radius: 5px 50px 0px 0px;
   }
   &__middle {
-    background-color: #42403c;
+    background-color: #474643;
     max-width: 100%;
     height: 270px;
     text-align: center;
