@@ -14,6 +14,7 @@
   grid-area: roi;
   max-height: 125px;
   position: relative;
+  overflow: hidden;
 }
 
 .grid-container-tableroi {
@@ -41,24 +42,27 @@
   padding-left: 20px;
   font-size: 1.2rem;
   font-weight: bold;
+  position: relative;
+  z-index: 33;
 }
 
 .tableroi-center {
   font-size: 2.2rem;
   font-weight: bold;
+  position: relative;
+  z-index: 33;
 }
 
 #circle {
   width: 1000px;
   height: 1000px;
   border-radius: 50%;
-  // border: 4px solid red;
-  background-color: green;
-  // background-position: 500px, 200px;
+  background-color: gray;
   position: absolute;
   left: -150px;
   top: 0px;
   overflow: hidden;
   z-index: 0;
   padding-bottom: 20px;
+  z-index: 2;
 }
