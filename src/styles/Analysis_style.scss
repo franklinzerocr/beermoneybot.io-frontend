@@ -89,6 +89,10 @@
   background-repeat: no-repeat;
 }
 
+.product-article:hover {
+  -webkit-animation: slide-top 0.4s linear both;
+  animation: slide-top 0.4s linear both;
+}
 
 .product-article h3 {
   color: orange;
@@ -185,4 +189,3 @@
     z-index: 2;
   }
 }
-
