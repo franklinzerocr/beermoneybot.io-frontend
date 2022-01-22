@@ -11,7 +11,7 @@ const SectionOperate = () => {
       <div className='title-container title-left'>
         <div>
           <div className="title-container-aux">
-            <AnimationOnScroll animateIn="animate__bounceIn" >
+            <AnimationOnScroll animateIn="animate__bounceIn" animateOnce={true}>
               <h2 className='first-word'>¿Cómo</h2>
               <h2 className='second-word tabbed-left'>Funciona?</h2>
             </AnimationOnScroll>
@@ -22,7 +22,7 @@ const SectionOperate = () => {
       <section className='main-product-container'>
         <section className='product-cards'>
           <article className='product-article'>
-            <AnimationOnScroll animateIn="animate__fadeInDown" >
+            <AnimationOnScroll animateIn="animate__fadeInDown" animateOnce={true}>
               <div className='card-text-short'>
                 <h3>Análisis Técnico</h3>
               </div>
@@ -35,7 +35,7 @@ const SectionOperate = () => {
 
           <br />
           <article className='product-article'>
-            <AnimationOnScroll animateIn="animate__fadeInUp" >
+            <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}>
               <div className='card-text-short'>
                 <h3>Análisis Fundamental</h3>
               </div>
@@ -47,7 +47,7 @@ const SectionOperate = () => {
           </article>
           <br />
           <article className='product-article'>
-            <AnimationOnScroll animateIn="animate__fadeInDown" >
+            <AnimationOnScroll animateIn="animate__fadeInDown" animateOnce={true}>
               <div className='card-text-short'>
                 <h3>Sentimientos del mercado</h3>
               </div>

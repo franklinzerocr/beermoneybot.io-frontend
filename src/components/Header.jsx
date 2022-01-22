@@ -18,7 +18,7 @@ const Header = ({ small }) => {
         <div className='header-menu-container'>
           <MenuHeader />
         </div>
-        <AnimationOnScroll animateIn="animate__lightSpeedInRight" >
+        <AnimationOnScroll animateIn="animate__lightSpeedInRight" animateOnce={true} >
           <div className='header--title-container'>
             <p>
               ¿Un <b>Robot</b> que
@@ -31,7 +31,7 @@ const Header = ({ small }) => {
           </div>
         </AnimationOnScroll>
         <div className='header-img'>
-          <AnimationOnScroll animateIn="animate__fadeInDown" >
+          <AnimationOnScroll animateIn="animate__fadeInDown" animateOnce={true}>
             <img src={logo} alt=''></img>
           </AnimationOnScroll>
         </div>

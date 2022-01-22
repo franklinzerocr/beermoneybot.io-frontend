@@ -13,7 +13,7 @@ const SectionWhat = () => {
     <section className='main-container-roi'>
       <div className='title-container title-right'>
         <div className="title-container-aux">
-          <AnimationOnScroll animateIn="animate__bounceIn" >
+          <AnimationOnScroll animateIn="animate__bounceIn" animateOnce={true}>
             <h2 className='first-word '>Operaciones</h2>
             <h2 className='second-word tabbed-right'>Realizadas</h2>
           </AnimationOnScroll>
@@ -22,7 +22,7 @@ const SectionWhat = () => {
       </div>
       <section className='container-articles-roi'>
         <article className='article-roi table-roi-container'>
-          <AnimationOnScroll animateIn="animate__slideInLeft" >
+          <AnimationOnScroll animateIn="animate__slideInLeft" animateOnce={true}>
             <TableRoi coin={coin} setCoin={setCoin} />{' '}
           </AnimationOnScroll>
         </article>
@@ -31,7 +31,7 @@ const SectionWhat = () => {
         <article className='article-roi twitter-timeline '>
           {/* <a className="twitter-timeline" data-height="460" data-theme="light" href="https://twitter.com/Beermoney_Bot?ref_src=twsrc%5Etfw"> @Beermoney_Bot</a> 
                 <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script> */}
-          <AnimationOnScroll animateIn="animate__slideInRight" >
+          <AnimationOnScroll animateIn="animate__slideInRight" animateOnce={true}>
             <TwitterTimelineEmbed sourceType='profile' screenName='Beermoney_Bot' linkColor='#FF9933' options={{ height: 400 }} noFooter={true} theme='dark' />
           </AnimationOnScroll>
 

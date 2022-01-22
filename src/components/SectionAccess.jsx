@@ -25,7 +25,7 @@ const SectionAccess = (e) => {
       <section className='main-access-container'>
         <div className='title-container title-left' id='access'>
           <div className="title-container-aux">
-            <AnimationOnScroll animateIn="animate__bounceIn" >
+            <AnimationOnScroll animateIn="animate__bounceIn" animateOnce={true}>
               <h2 className='first-word '>Solicita tu </h2>
               <h2 className='second-word tabbed-left'>Acceso Anticipado</h2>
             </AnimationOnScroll>

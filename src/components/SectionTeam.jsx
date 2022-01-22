@@ -8,7 +8,7 @@ const SectionTeam = () => {
   return (
     <section className='team-container'>
       <div className='title-container title-left'>
-        <AnimationOnScroll animateIn="animate__bounceIn" >
+        <AnimationOnScroll animateIn="animate__bounceIn" animateOnce={true}>
           <h2 className='first-word'>Conoce</h2>
           <h2 className='second-word tabbed-left'>al Equipo</h2>
         </AnimationOnScroll>
