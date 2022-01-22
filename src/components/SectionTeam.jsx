@@ -5,6 +5,82 @@ import TeamMember from "../components/TeamMember";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const SectionTeam = () => {
+  let team =
+    [
+      {
+        portrait: portrait,
+        role: 'coding',
+        fullName: 'John Doe',
+        position: 'Developer',
+        socials:
+        {
+          twitter: 'Beermoney_Bot',
+          medium: '',
+          telegram: ''
+        }
+      },
+      {
+        portrait: portrait,
+        role: 'crypto',
+        fullName: 'Natasha Romanoff',
+        position: 'Analista Cripto',
+        socials:
+        {
+          twitter: 'Beermoney_Bot',
+          medium: '',
+          telegram: ''
+        },
+      },
+      {
+        portrait: portrait,
+        role: 'marketing',
+        fullName: 'John Rambo',
+        position: 'Líder de Marketing',
+        socials:
+        {
+          twitter: 'Beermoney_Bot',
+          medium: '',
+          telegram: ''
+        }
+      },
+      {
+        portrait: portrait,
+        role: 'coding',
+        fullName: 'Charlie Brown',
+        position: 'Tester',
+        socials:
+        {
+          twitter: 'Beermoney_Bot',
+          medium: '',
+          telegram: ''
+        }
+      },
+      {
+        portrait: portrait,
+        role: 'crypto',
+        fullName: 'Diana Prince',
+        position: 'Analista Técnico',
+        socials:
+        {
+          twitter: 'Beermoney_Bot',
+          medium: '',
+          telegram: ''
+        }
+      },
+      {
+        portrait: portrait,
+        role: 'marketing',
+        fullName: 'Tony Stark',
+        position: 'Ventas',
+        socials:
+        {
+          twitter: 'Beermoney_Bot',
+          medium: '',
+          telegram: ''
+        }
+      }
+    ]
+
   return (
     <section className='team-container'>
       <div className='title-container title-left'>
@@ -14,90 +90,19 @@ const SectionTeam = () => {
         </AnimationOnScroll>
       </div>
       <div className='title-container team'>
-        <TeamMember
-          portrait={portrait}
-          role={'coding'}
-          fullName={'John Doe'}
-          position={'Developer'}
-          socials=
-          {
-            {
-              twitter: 'Beermoney_Bot',
-              medium: '',
-              telegram: ''
-            }
-          }
-        />
-        <TeamMember
-          portrait={portrait}
-          role={'crypto'}
-          fullName={'Natasha Romanoff'}
-          position={'Analista Cripto'}
-          socials=
-          {
-            {
-              twitter: 'Beermoney_Bot',
-              medium: '',
-              telegram: ''
-            }
-          }
-        />
-        <TeamMember
-          portrait={portrait}
-          role={'marketing'}
-          fullName={'John Rambo'}
-          position={'Líder de Marketing'}
-          socials=
-          {
-            {
-              twitter: 'Beermoney_Bot',
-              medium: '',
-              telegram: ''
-            }
-          }
-        />
-        <TeamMember
-          portrait={portrait}
-          role={'coding'}
-          fullName={'Charlie Brown'}
-          position={'Tester'}
-          socials=
-          {
-            {
-              twitter: 'Beermoney_Bot',
-              medium: '',
-              telegram: ''
-            }
-          }
-        />
-        <TeamMember
-          portrait={portrait}
-          role={'crypto'}
-          fullName={'Diana Prince'}
-          position={'Analista Técnico'}
-          socials=
-          {
-            {
-              twitter: 'Beermoney_Bot',
-              medium: '',
-              telegram: ''
-            }
-          }
-        />
-        <TeamMember
-          portrait={portrait}
-          role={'marketing'}
-          fullName={'Tony Stark'}
-          position={'Ventas'}
-          socials=
-          {
-            {
-              twitter: 'Beermoney_Bot',
-              medium: '',
-              telegram: ''
-            }
-          }
-        />
+        {
+          team.map(
+            (member) => (
+              <TeamMember
+                portrait={portrait}
+                role={member.role}
+                fullName={member.fullName}
+                position={member.position}
+                socials={member.socials}
+              />
+            )
+          )
+        }
       </div>
     </section>
   )
