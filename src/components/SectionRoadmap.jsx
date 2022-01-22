@@ -11,7 +11,7 @@ const SectionRoadmap = () => {
   return (
     <>
       <section className='roadmap-container'>
-        <img src={roadmap} alt="roadmap" loading="lazy"/>
+        <img src={roadmap} alt="roadmap" loading="eager"/>
       </section>
     </>
   )
