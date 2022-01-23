@@ -31,9 +31,7 @@ const Header = ({ small }) => {
           </div>
         </AnimationOnScroll>
         <div className='header-img'>
-          <AnimationOnScroll animateIn="animate__fadeInDown" animateOnce={true}>
-            <img src={logo} alt=''></img>
-          </AnimationOnScroll>
+            <img src={logo} alt='beer' className='slide-in-top'></img>
         </div>
       </header>
     );
