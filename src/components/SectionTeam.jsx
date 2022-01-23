@@ -11,7 +11,7 @@ const SectionTeam = () => {
         portrait: portraits.franklin,
         role: 'ceo',
         fullName: 'Franklin Noriega',
-        position: 'Lead Developer & Director General',
+        position: 'Director General & Lead Developer',
         socials:
         {
           twitter: 'franklinzerocr',
@@ -28,16 +28,6 @@ const SectionTeam = () => {
         },
       },
       {
-        portrait: portraits.kevin,
-        role: 'marketing',
-        fullName: 'Kevin Hernández',
-        position: 'Director de Marketing',
-        socials:
-        {
-          twitter: 'KevinNegocios',
-        }
-      },
-      {
         portrait: portraits.ricardo,
         role: 'crypto',
         fullName: 'Ricardo López',
@@ -45,6 +35,16 @@ const SectionTeam = () => {
         socials:
         {
           twitter: 'Ruiseart',
+        }
+      },
+      {
+        portrait: portraits.kevin,
+        role: 'marketing',
+        fullName: 'Kevin Hernández',
+        position: 'Director de Marketing',
+        socials:
+        {
+          twitter: 'KevinNegocios',
         }
       },
       {
@@ -71,11 +71,12 @@ const SectionTeam = () => {
 
   return (
     <section className='team-container'>
-      <div className='title-container title-left'>
+      <div className='title-container title-container-aux title-left'>
         <AnimationOnScroll animateIn="animate__bounceIn" animateOnce={true}>
           <h2 className='first-word'>Conoce</h2>
           <h2 className='second-word tabbed-left'>al Equipo</h2>
         </AnimationOnScroll>
+        {/* <div id="circle-analysis"></div> */}
       </div>
       <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
         <div className='title-container team'>

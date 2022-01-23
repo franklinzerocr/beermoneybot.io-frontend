@@ -44,10 +44,10 @@ const TeamMember = ({ portrait, role, fullName, position, socials }) => {
         <div className="team-card__middle">
           <img src={portrait} alt="Portrait" loading='eager' />
           <br />
-          <div>
+          <span className='team-card__middle-text'>
             <h3>{fullName}</h3>
             <i>{position}</i>
-          </div>
+          </span>
         </div>
         <div className="team-card__bottom">
           <div className='socials team-card-bottom'>
