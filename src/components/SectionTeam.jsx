@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/Team_style.scss';
-import portrait from '../assets/team/portrait.png';
+import portraits from '../assets/team/portraits/index.js'
 import TeamMember from "../components/TeamMember";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
@@ -8,75 +8,63 @@ const SectionTeam = () => {
   let team =
     [
       {
-        portrait: portrait,
-        role: 'coding',
-        fullName: 'John Doe',
-        position: 'Developer',
+        portrait: portraits.franklin,
+        role: 'ceo',
+        fullName: 'Franklin Noriega',
+        position: 'Lead Developer & Director General',
         socials:
         {
-          twitter: 'Beermoney_Bot',
-          medium: '',
-          telegram: ''
+          twitter: 'franklinzerocr',
         }
       },
       {
-        portrait: portrait,
-        role: 'crypto',
-        fullName: 'Natasha Romanoff',
-        position: 'Analista Cripto',
+        portrait: portraits.nathaly,
+        role: 'administration',
+        fullName: 'Nathaly Quintero',
+        position: 'Directora Administrativa',
         socials:
         {
-          twitter: 'Beermoney_Bot',
-          medium: '',
-          telegram: ''
+          twitter: 'lanathquintero',
         },
       },
       {
-        portrait: portrait,
+        portrait: portraits.kevin,
         role: 'marketing',
-        fullName: 'John Rambo',
-        position: 'Líder de Marketing',
+        fullName: 'Kevin Hernández',
+        position: 'Director de Marketing',
         socials:
         {
-          twitter: 'Beermoney_Bot',
-          medium: '',
-          telegram: ''
+          twitter: 'KevinNegocios',
         }
       },
       {
-        portrait: portrait,
-        role: 'coding',
-        fullName: 'Charlie Brown',
-        position: 'Tester',
-        socials:
-        {
-          twitter: 'Beermoney_Bot',
-          medium: '',
-          telegram: ''
-        }
-      },
-      {
-        portrait: portrait,
+        portrait: portraits.ricardo,
         role: 'crypto',
-        fullName: 'Diana Prince',
-        position: 'Analista Técnico',
+        fullName: 'Ricardo López',
+        position: 'Director de Finanzas',
         socials:
         {
-          twitter: 'Beermoney_Bot',
-          medium: '',
-          telegram: ''
+          twitter: 'Ruiseart',
         }
       },
       {
-        portrait: portrait,
-        role: 'marketing',
-        fullName: 'Tony Stark',
-        position: 'Ventas',
+        portrait: portraits.karlianna,
+        role: 'frontend',
+        fullName: 'Karlianna Suárez',
+        position: 'Frontend Developer',
         socials:
         {
-          twitter: 'Beermoney_Bot',
-          medium: '',
-          telegram: ''
+          twitter: 'KarliMSC',
+        }
+      },
+      {
+        portrait: portraits.felix,
+        role: 'backend',
+        fullName: 'Felix García',
+        position: 'Backend Developer',
+        socials:
+        {
+          twitter: 'FG1989',
         }
       }
     ]
@@ -89,21 +77,24 @@ const SectionTeam = () => {
           <h2 className='second-word tabbed-left'>al Equipo</h2>
         </AnimationOnScroll>
       </div>
-      <div className='title-container team'>
-        {
-          team.map(
-            (member) => (
-              <TeamMember
-                portrait={portrait}
-                role={member.role}
-                fullName={member.fullName}
-                position={member.position}
-                socials={member.socials}
-              />
+      <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
+        <div className='title-container team'>
+          {
+            team.map(
+              (member) => (
+                <TeamMember
+                  portrait={member.portrait}
+                  role={member.role}
+                  fullName={member.fullName}
+                  position={member.position}
+                  socials={member.socials}
+                />
+              )
             )
-          )
-        }
-      </div>
+          }
+        </div>
+      </AnimationOnScroll>
+
     </section>
   )
 }

@@ -12,14 +12,23 @@ const TeamMember = ({ portrait, role, fullName, position, socials }) => {
   const roleHandler = (role) => {
     let role_ = ''
     switch (role) {
-      case 'coding':
-        role_ = 'coding'
+      case 'frontend':
+        role_ = 'frontend'
         break;
       case 'crypto':
         role_ = 'crypto'
         break
       case 'marketing':
         role_ = 'marketing'
+        break
+      case 'administration':
+        role_ = 'administration'
+        break
+      case 'ceo':
+        role_ = 'ceo'
+        break
+      case 'backend':
+        role_ = 'backend'
         break
       default:
         role_ = '';
@@ -33,20 +42,20 @@ const TeamMember = ({ portrait, role, fullName, position, socials }) => {
 
         </div>
         <div className="team-card__middle">
-          <img src={portrait} alt="Portrait" loading='lazy' />
-          <h3>{fullName}</h3>
-          <i>{position}</i>
+          <img src={portrait} alt="Portrait" loading='eager' />
+          <br />
+          <div>
+            <h3>{fullName}</h3>
+            <i>{position}</i>
+          </div>
         </div>
         <div className="team-card__bottom">
           <div className='socials team-card-bottom'>
-            <a href={`https://twitter.com/${socials.twitter}`} target="_blank" rel="noreferrer">
+            <a href={`https://twitter.com/${socials.twitter}`} target="_blank" rel="noreferrer" className='link-bottom'>
               <i className='fab fa-twitter'></i>
-            </a>
-            <a href={`https://medium.com/${socials.medium}`} target="_blank" rel="noreferrer">
-              <i className='fab fa-medium-m'></i>
-            </a>
-            <a href={`https://telegram.org/${socials.telegram}`} target="_blank" rel="noreferrer">
-              <i className='fab fa-telegram-plane'></i>
+              <small className='link-bottom-details'>
+                {socials.twitter}
+              </small>
             </a>
           </div>
         </div>
