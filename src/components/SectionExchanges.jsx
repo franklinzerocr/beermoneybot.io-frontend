@@ -22,50 +22,40 @@ const SectionUse = () => {
           <div id="circle-exchanges"></div>
         </div>
         <section className='section-exchange'>
-          <div className='grid-exchanges'>
-            <div className='grid-exchange enable-exchange'>
-              <a href="https://www.binance.com" target="_blank" rel="noreferrer">
-                <AnimationOnScroll animateIn="animate__fadeInDown" animateOnce={true}>
+          <AnimationOnScroll animateIn="animate__fadeInDown" animateOnce={true}>
+            <div className='grid-exchanges'>
+              <div className='grid-exchange enable-exchange'>
+                <a href="https://www.binance.com" target="_blank" rel="noreferrer">
                   <img src={binance} alt='' />
-                </AnimationOnScroll>
-              </a>
-            </div>
-            <div className='grid-exchange unable-exchange'>
-              <a href="https://www.ftx.com" target="_blank" rel="noreferrer">
-                <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}>
+                </a>
+              </div>
+              <div className='grid-exchange unable-exchange'>
+                <a href="https://www.ftx.com" target="_blank" rel="noreferrer">
                   <img src={ftx} alt='' />
-                </AnimationOnScroll>
-              </a>
-            </div>
-            <div className='grid-exchange unable-exchange'>
-              <a href="https://www.bybit.com" target="_blank" rel="noreferrer">
-                <AnimationOnScroll animateIn="animate__fadeInDown" animateOnce={true}>
+                </a>
+              </div>
+              <div className='grid-exchange unable-exchange'>
+                <a href="https://www.bybit.com" target="_blank" rel="noreferrer">
                   <img src={bybit} alt='' />
-                </AnimationOnScroll>
-              </a>
-            </div>
-            <div className='grid-exchange unable-exchange'>
-              <a href="https://www.kraken.com" target="_blank" rel="noreferrer">
-                <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}>
+                </a>
+              </div>
+              <div className='grid-exchange unable-exchange'>
+                <a href="https://www.kraken.com" target="_blank" rel="noreferrer">
                   <img src={kraken} alt='' />
-                </AnimationOnScroll>
-              </a>
-            </div>
-            <div className='grid-exchange unable-exchange'>
-              <a href="https://www.kucoin.com" target="_blank" rel="noreferrer">
-                <AnimationOnScroll animateIn="animate__fadeInDown" animateOnce={true}>
+                </a>
+              </div>
+              <div className='grid-exchange unable-exchange'>
+                <a href="https://www.kucoin.com" target="_blank" rel="noreferrer">
                   <img src={kucoin} alt='' />
-                </AnimationOnScroll>
-              </a>
-            </div>
-            <div className='grid-exchange unable-exchange'>
-              <a href="https://www.bitfinex.com" target="_blank" rel="noreferrer">
-                <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}>
+                </a>
+              </div>
+              <div className='grid-exchange unable-exchange'>
+                <a href="https://www.bitfinex.com" target="_blank" rel="noreferrer">
                   <img src={bitfinex} alt='' />
-                </AnimationOnScroll>
-              </a>
+                </a>
+              </div>
             </div>
-          </div>
+          </AnimationOnScroll>
         </section>
       </div>
     </section>
