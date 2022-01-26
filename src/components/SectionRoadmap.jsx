@@ -30,14 +30,20 @@ const SectionRoadmap = () => {
                       <span></span>
                     </div>
                     <div className="roadmap-container-inner-proper-quarter-left-cubes-main">
-                      <div>
+                      <span>
                         2022
-                      </div>
-                      <div>
+                      </span>
+                      <span>
                         Q1
-                      </div>
+                      </span>
                     </div>
                   </div>
+                  <div className='roadmap-container-inner-proper-quarter-left-bottom_line'>
+
+                  </div>
+                </div>
+                <div className="roadmap-container-inner-proper-quarter-middle">
+
                 </div>
                 <div className="roadmap-container-inner-proper-quarter-right">
                   <div className="roadmap-container-inner-proper-quarter-right-top">
