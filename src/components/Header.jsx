@@ -1,6 +1,6 @@
 import '../styles/Header_style.scss';
 import { MenuHeader } from './MenuHeader';
-import logo from '../assets/Ilustracion-beer.svg';
+import logo from '../assets/Ilustracion-beerc.svg';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const Header = ({ small }) => {
