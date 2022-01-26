@@ -1,4 +1,4 @@
-.roadmap-container {
+.roadmap-container-cabled {
   display: flex;
   justify-content: center;
   border-bottom: 20px solid white;
@@ -10,6 +10,137 @@
   }
 }
 
+
+.roadmap-container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 20px solid white;
+  background: rgb(34, 34, 34);
+  background: linear-gradient(170deg, rgba(248,149,33,1), rgb(34, 34, 34), rgb(34, 34, 34), rgb(34, 34, 34), rgb(34, 34, 34),rgb(34, 34, 34), rgba(248,149,33,1) );
+  min-height: 90vh;
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    // background-color: blue;
+    width: 100%;
+    align-items: flex-start;
+    margin: 0px 20% 0px 20%;
+    padding: 60px 0 60px 0;
+    max-width: 1280px;
+    margin: 0px auto;
+    color: white;
+    &-title {
+      h2 {
+        font-size: 4rem;
+      }
+    }
+    &-proper {
+      // background-color: red;
+      margin: 100px 0 0 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      &-quarter {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 1.5rem;
+        width: 90%;
+        
+        &-left {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          align-content: center;
+          justify-content: center;
+          &-stage {
+            color: black;
+            background-color: lightyellow;
+            padding: 2px 12px 2px 12px;
+          }
+          &-cubes {
+            position: relative;
+            &-background {
+              height: 150px;
+              width: 150px;
+              display: flex;
+              flex-direction: column;
+              background-color: yellow;
+              span {
+                width: 100%;
+                height: 75px;
+                margin-top: 50%;
+                background-color: gold;
+              }
+            }
+            &-main {
+              position: absolute;
+              top: 0px;
+              right: -20px;
+              background-color: rgb(250, 250, 162);
+              color: crimson;
+              height: 150px;
+              width: 150px;
+            }
+          }
+        }
+        &-right {
+          width: 60%;
+          &-top {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &-beerplus {
+              position: relative;
+              img {
+                height: 50px;
+                width: 50px;
+              }
+              span {
+                position: absolute;
+                top: -15px;
+                color: rgba(248,149,33,1);
+              }
+            }
+            &-checkpoint {
+              margin-left: 40px;
+              margin-bottom: 6px;
+              background-color: rgb(250, 250, 162);
+              color: crimson;
+              padding: 3px 10px 3px 10px;
+            }
+          }
+          &-list {
+            border-left: 10px solid lightgray;
+            ul {
+              list-style-type: square;
+              color: rgb(250, 250, 162);
+              vertical-align: middle;
+              li {
+                font-size: 2rem;
+                span {
+                  color: white;
+                  font-weight: bold;
+                  font-size: 1.5rem;
+                }
+              }
+            }
+          }
+
+        }
+        
+      }
+    }
+
+  }
+}
 ////media queries
 
 @media (min-width: 0px) and (max-width: 600px) {

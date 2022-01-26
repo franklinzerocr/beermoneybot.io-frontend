@@ -2,10 +2,10 @@ import React from 'react'
 import Header from '../components/Header';
 import ContainerMain from '../containers/ContainerMain';
 import Footer from '../components/Footer';
-import SectionRoadmap from '../components/SectionRoadmap';
+import SectionRoadmapCabled from '../components/SectionRoadmapCabled';
 import {MetaTags} from 'react-meta-tags';
 
-const RoadmapTest = () => {
+const Roadmap = () => {
   return (
     <>
       <MetaTags>
@@ -16,11 +16,11 @@ const RoadmapTest = () => {
       </MetaTags>
       <Header small={'small'} />
       <ContainerMain>
-        <SectionRoadmap />
+        <SectionRoadmapCabled />
       </ContainerMain>
       <Footer />
     </>
   )
 }
 
-export default RoadmapTest
+export default Roadmap
