@@ -104,6 +104,11 @@
                 font-weight: bold;
               }
             }
+            &-bottom_line {
+              background-color: lightgray;
+              height: 10px;
+              width: 20%;
+            }
           }
         }
         &-right {
@@ -144,7 +149,7 @@
                 span {
                   color: white;
                   font-weight: bold;
-                  font-size: 1.5rem;
+                  font-size: 1.4rem;
                 }
               }
             }
