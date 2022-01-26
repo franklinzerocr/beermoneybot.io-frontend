@@ -20,18 +20,20 @@ const Footer = () => {
         <div className='logo-footer-container'>
           <p>Beermoney Bot es un Bot de Trading Algoritmico Automatizado con Criptomonedas que opera en distintos exchanges.</p>
           <div className='footer-menu'>
-            <li>
-              <Link to='/'>Home</Link>
-            </li>
-            <li>
-              <Link to='/roadmap'>Roadmap</Link>
-            </li>
-            <li>
-              <Link to='/team'>Team</Link>
-            </li>
-            <li>
-              <a href='/#access'>Access</a>
-            </li>
+            <ul>
+              <li>
+                <Link to='/'>Home</Link>
+              </li>
+              <li>
+                <Link to='/roadmap'>Roadmap</Link>
+              </li>
+              <li>
+                <Link to='/team'>Team</Link>
+              </li>
+              <li>
+                <a href='/#access'>Access</a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
