@@ -12,13 +12,14 @@ const SectionAccess = (e) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // emailjs.sendForm('serivico de correo', 'template a usar', form.current, 'id de usuario')
-    emailjs.sendForm('service_rseoszi', 'template_jb4wvfj', form.current, 'user_a901ZJVys82iwiQRZjzSO')
+    // emailjs.sendForm('service_rseoszi', 'template_jb4wvfj', form.current, 'user_a901ZJVys82iwiQRZjzSO')
+    emailjs.sendForm('service_byy3rbf', 'template_cezuxnv', form.current, 'user_MmdiIBDzdFj4QZkkPVicV')
       .then((result) => {
         console.log(result.text);
+        navigate('/thanks')
       }, (error) => {
         console.log(error.text);
       });
-    navigate('/thanks')
   }
   return (
     <>

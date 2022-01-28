@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/Roadmap_style.scss';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import loguito from '../assets/Logos/loguito.png'
+import beerBottom from '../assets/Logos/LogoIndex.png'
 
 
 
@@ -250,7 +251,7 @@ const SectionRoadmap = () => {
                   </div>
                 </div>
               </div>
-            </AnimationOnScroll>   
+            </AnimationOnScroll>
 
             <br />
             <br />
@@ -282,7 +283,9 @@ const SectionRoadmap = () => {
                   <div className="roadmap-container-inner-proper-quarter-right-top">
                     <div className="roadmap-container-inner-proper-quarter-right-top-beerplus">
                       <img src={loguito} alt="loguito" />
-                      <span>+1</span>
+                      <span>
+                        +1
+                      </span>
                     </div>
                     <div className="roadmap-container-inner-proper-quarter-right-top-checkpoint">
                       <span>
@@ -306,8 +309,46 @@ const SectionRoadmap = () => {
                   </div>
                 </div>
               </div>
-            </AnimationOnScroll>  
+            </AnimationOnScroll>
 
+            <br />
+            <br />
+
+
+            {/* bottom */}
+
+            <AnimationOnScroll animateIn="animate__slideInRight" animateOnce={true} className='roadmap-container-inner-proper-quarter'>
+              <div className="roadmap-container-inner-proper-quarter lower">
+                <div className='lower-left'>
+                  <div className='lower-left-top'>
+                    <span>2023</span>
+                    <span>IN PROGRESS</span>
+                  </div>
+                  <div className='lower-left-lower'>
+                    <ul>
+                      <li>
+                        Lanzamiento de "Beermoney Custom Bot"
+                      </li>
+                      <li>
+                        Integración de Token
+                      </li>
+                      <li>
+                        Integración a DEX
+                      </li>
+                      <li>
+                        Integración a NFT Marketplaces
+                      </li>
+                      <li>
+                        High Frequency Crypto Trading
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className='lower-right'>
+                  <img src={beerBottom} alt="beer" />
+                </div>
+              </div>
+            </AnimationOnScroll>
           </div>
         </div>
       </section>
