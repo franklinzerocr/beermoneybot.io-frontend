@@ -18,7 +18,7 @@ const SectionRoadmap = () => {
           {/* Title */}
           <AnimationOnScroll animateIn="animate__bounceIn" animateOnce={true}>
             <div className="roadmap-container-inner-title">
-              <h2>ROADMAP</h2>
+              <h1>ROADMAP</h1>
             </div>
           </AnimationOnScroll>
           <div className="roadmap-container-inner-proper">
