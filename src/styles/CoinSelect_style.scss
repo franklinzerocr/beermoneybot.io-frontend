@@ -17,11 +17,12 @@
   height: 50px;
   font-size: 1.5rem;
   line-height: 50px;
-  border-radius: 25px;
+  border-radius: 0 25px 25px 0;
   background-color: #42403c;
   min-width: 100px;
-  &:not(:first-child) {
-    margin-left: 10px;
+  &:first-child {
+    // margin-left: 10px;
+    border-radius: 25px  0px 0px 25px;
   }
   &:hover {
     cursor: pointer;
@@ -33,6 +34,9 @@
 
 .selected-coin {
   background-color: orange;
+  height: 55px;
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 ////media queries
 
@@ -45,3 +49,30 @@
 //   //   }
 //   // }
 // }
+
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
