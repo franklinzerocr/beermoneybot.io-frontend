@@ -18,8 +18,8 @@ const SectionAccess = (e) => {
     e.preventDefault();
     setIsSubmitting(true)
     // emailjs.sendForm('serivico de correo', 'template a usar', form.current, 'id de usuario')
-    emailjs.sendForm('service_rseoszi', 'template_jb4wvfj', form.current, 'user_a901ZJVys82iwiQRZjzSO', '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe')
-      // emailjs.sendForm('service_byy3rbf', 'template_cezuxnv', form.current, 'user_MmdiIBDzdFj4QZkkPVicV')
+    // emailjs.sendForm('service_rseoszi', 'template_jb4wvfj', form.current, 'user_a901ZJVys82iwiQRZjzSO', '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe')
+      emailjs.sendForm('service_byy3rbf', 'template_cezuxnv', form.current, 'user_MmdiIBDzdFj4QZkkPVicV')
       .then((result) => {
         console.log(result.text);
         setIsSubmitting(false)
