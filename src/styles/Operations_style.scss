@@ -1,4 +1,4 @@
-@import 'var';
+@import "var";
 
 .main-container-roi {
   position: relative;
@@ -10,6 +10,9 @@
   padding-top: 20px;
   padding-bottom: 30px;
   text-align: center;
+  &:nth-child(2) {
+    height: 5800px;
+  }
 }
 
 .article-roi {
@@ -24,7 +27,41 @@
   align-content: flex-start;
 }
 
-.twitter-timeline {
+.time-select-container {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 40px;
+  max-height: 40px;
+  .time-select-button {
+    max-width: 110px;
+    // font-size: 0.8rem;
+    font-weight: bold;
+    width: 110px;
+    background-color: #42403c;
+    border-radius: 40px;
+    padding: 5px;
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    span {
+      margin-left: 5px;
+    }
+  }
+  .selected-frequency {
+    background-color: orange;
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+}
+
+.twitter-timeline2 {
+  padding-top: 48px;
 }
 
 .table-roi-container {
@@ -35,7 +72,7 @@
   min-width: 288px;
   max-width: 900px;
   margin: 0 auto;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   text-align: left;
 }
 
@@ -45,7 +82,7 @@
   line-height: 1.6rem;
   color: white;
   margin-bottom: 25px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .main-container-roi h2 {
@@ -53,7 +90,7 @@
   font-weight: bold;
   line-height: 2rem;
   color: var(--soft-orange);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .main-container-what p {
@@ -62,7 +99,7 @@
   font-weight: 500;
   line-height: 1.6rem;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container-articles-roi {
@@ -82,8 +119,6 @@
   top: -100px;
   z-index: 2;
 }
-
-
 
 @media (min-width: 1200px) {
   .container-articles-roi {
@@ -108,7 +143,7 @@
   }
 
   .container-articles-roi {
-    display: flex;  
+    display: flex;
     flex-direction: column;
   }
 
@@ -123,5 +158,4 @@
     top: -50px;
     z-index: 2;
   }
-  
 }
