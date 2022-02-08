@@ -157,7 +157,7 @@ select {
   border: none;
   border-radius: 5px;
   box-sizing: border-box;
-  background-color: #dfdfdf;
+  background-color: #dfdfdf !important;
   margin: 10px 15px;
   font-size: 14px;
 }
@@ -186,6 +186,33 @@ select {
   position: relative;
   font-size: 15px;
 }
+
+.plan-info-container{
+  select {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #dfdfdf;
+  }
+  select:required:invalid {
+    color: gray;
+  }
+  select:required {
+    option {
+      color: gray;
+    }
+  }
+  .gray-default {
+    color: gray !important;
+  }
+  textarea {
+    resize: none;
+    font-family: inherit;
+    font-size: 14px;
+    font-family: Arial;
+
+  }
+}
+
 
 .plan-card-price {
   padding: 5px;

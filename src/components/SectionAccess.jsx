@@ -13,13 +13,14 @@ const SectionAccess = (e) => {
   const captcha = useRef(null);
   const [captchaValid, setCaptchaValid] = React.useState(null)
   const [isSubmitting, setIsSubmitting] = React.useState(false)
+  const [mySelect, setMySelect] = React.useState(true);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true)
     // emailjs.sendForm('serivico de correo', 'template a usar', form.current, 'id de usuario')
-    // emailjs.sendForm('service_rseoszi', 'template_jb4wvfj', form.current, 'user_a901ZJVys82iwiQRZjzSO', '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe')
-      emailjs.sendForm('service_byy3rbf', 'template_cezuxnv', form.current, 'user_MmdiIBDzdFj4QZkkPVicV')
+    emailjs.sendForm('service_rseoszi', 'template_jb4wvfj', form.current, 'user_a901ZJVys82iwiQRZjzSO')
+    // emailjs.sendForm('service_byy3rbf', 'template_cezuxnv', form.current, 'user_MmdiIBDzdFj4QZkkPVicV')
       .then((result) => {
         console.log(result.text);
         setIsSubmitting(false)
@@ -36,6 +37,9 @@ const SectionAccess = (e) => {
     if (!captcha.current.getValue()) {
       setCaptchaValid(false)
     }
+  }
+  const handleSelect = () => {
+    setMySelect(false)
   }
   return (
     <>
@@ -61,9 +65,18 @@ const SectionAccess = (e) => {
             </h3>
 
             <form className='plan-info-container' ref={form} onSubmit={handleSubmit}>
+              <input type='text' id='fname' name='fname' placeholder='Nombre Completo' required minLength="5" maxLength="60"></input>
               <input type='email' id='femail' name='femail' placeholder='Email' required minLength="5" maxLength="60"></input>
               <input type='text' id='ftuser' name='ftuser' placeholder='Telegram' required minLength="2" maxLength="60"></input>
-              <input type='text' id='ftext' name='ftext' placeholder='¿Cómo llegaste a este proyecto?' required minLength="5" maxLength="150"></input>
+              <select name="fhowArrived" id='fhowArrived' defaultValue={"¿Cómo llegaste a este proyecto?"} onChange={handleSelect} required className={mySelect && 'gray-default'}>  
+                <option value="¿Cómo llegaste a este proyecto?" disabled hidden>¿Cómo llegaste a este proyecto?</option>
+                <option value="Web">Web</option>
+                <option value="Twitter">Twitter</option>
+                <option value="Recomendación">Recomendación</option>
+                <option value="Otro">Otro</option>
+              </select>
+              <textarea id="fabout" name="fabout" rows="4" cols="50" placeholder='Háblanos un poco de tí...' required minLength="2" maxLength="160">
+              </textarea>
               <br />
               <br />
               <div className='captcha-container'>
@@ -73,7 +86,7 @@ const SectionAccess = (e) => {
                   onChange={onChange}
                 />
               </div>
-              <button className='plan-card-button' type="submit" disabled={captchaValid ? false : true}>
+              <button className='plan-card-button' type="submit" disabled={captchaValid && !mySelect ? false : true}>
                 {!isSubmitting ?
                   <b>Enviar</b>
                   :
