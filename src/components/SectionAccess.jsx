@@ -19,8 +19,8 @@ const SectionAccess = (e) => {
     e.preventDefault();
     setIsSubmitting(true)
     // emailjs.sendForm('serivico de correo', 'template a usar', form.current, 'id de usuario')
-    emailjs.sendForm('service_rseoszi', 'template_jb4wvfj', form.current, 'user_a901ZJVys82iwiQRZjzSO')
-    // emailjs.sendForm('service_byy3rbf', 'template_cezuxnv', form.current, 'user_MmdiIBDzdFj4QZkkPVicV')
+    // emailjs.sendForm('service_rseoszi', 'template_jb4wvfj', form.current, 'user_a901ZJVys82iwiQRZjzSO')
+    emailjs.sendForm('service_byy3rbf', 'template_cezuxnv', form.current, 'user_MmdiIBDzdFj4QZkkPVicV')
       .then((result) => {
         console.log(result.text);
         setIsSubmitting(false)
@@ -64,9 +64,10 @@ const SectionAccess = (e) => {
               <img src={logo} alt='' className='recommended'></img>
             </h3>
 
-            <form className='plan-info-container' ref={form} onSubmit={handleSubmit}>
+            <form className='plan-info-container' ref={form} onSubmit={handleSubmit} autocomplete="off">
               <input type='text' id='fname' name='fname' placeholder='Nombre Completo' required minLength="5" maxLength="60"></input>
               <input type='email' id='femail' name='femail' placeholder='Email' required minLength="5" maxLength="60"></input>
+              <input type='text' id='ftwuser' name='ftwuser' placeholder='Twitter' required minLength="2" maxLength="60"></input>
               <input type='text' id='ftuser' name='ftuser' placeholder='Telegram' required minLength="2" maxLength="60"></input>
               <select name="fhowArrived" id='fhowArrived' defaultValue={"¿Cómo llegaste a este proyecto?"} onChange={handleSelect} required className={mySelect && 'gray-default'}>  
                 <option value="¿Cómo llegaste a este proyecto?" disabled hidden>¿Cómo llegaste a este proyecto?</option>
