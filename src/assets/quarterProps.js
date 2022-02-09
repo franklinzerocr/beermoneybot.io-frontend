@@ -5,16 +5,16 @@ const quarterProps = [
     quarter: 'Q1',
     objectives: [
       {
-        objective: 'Estabilización de Spot Trading',
-        achieved: true,
-      },
-      {
         objective: 'Frontend beermoney.io',
         achieved: true,
       },
       {
         objective: 'V1.0 Dashboard',
         achieved: true,
+      },
+      {
+        objective: 'Estabilización de Spot Trading',
+        achieved: false,
       },
       {
         objective: 'Estabilización de Contabilidad',
