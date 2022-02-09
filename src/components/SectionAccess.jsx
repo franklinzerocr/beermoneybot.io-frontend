@@ -64,7 +64,7 @@ const SectionAccess = (e) => {
               <img src={logo} alt='' className='recommended'></img>
             </h3>
 
-            <form className='plan-info-container' ref={form} onSubmit={handleSubmit} autocomplete="off">
+            <form className='plan-info-container' ref={form} onSubmit={handleSubmit} autoComplete="off">
               <input type='text' id='fname' name='fname' placeholder='Nombre Completo' required minLength="5" maxLength="60"></input>
               <input type='email' id='femail' name='femail' placeholder='Email' required minLength="5" maxLength="60"></input>
               <input type='text' id='ftwuser' name='ftwuser' placeholder='Twitter' required minLength="2" maxLength="60"></input>
@@ -91,7 +91,7 @@ const SectionAccess = (e) => {
                 {!isSubmitting ?
                   <b>Enviar</b>
                   :
-                  <i class="fas fa-spinner fa-spin"></i>
+                  <i className="fas fa-spinner fa-spin"></i>
                 }
               </button>
               <br />

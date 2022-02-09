@@ -29,15 +29,15 @@ const SectionWhat = () => {
           <AnimationOnScroll animateIn='animate__slideInLeft' animateOnce={true}>
             <div className='time-select-container'>
               {/* <div className={`time-select-button ${frequency === 'Weekly' && 'selected-frequency'}`} onClick={() => handleFrequencyClick('Weekly')}>
-                <i class='fas fa-calendar-day'></i>
+                <i className='fas fa-calendar-day'></i>
                 <span>Semana</span>
               </div> */}
               <div className={`time-select-button ${frequency === 'Monthly' && 'selected-frequency'}`} onClick={() => handleFrequencyClick('Monthly')}>
-                <i class='fas fa-calendar-week'></i>
+                <i className='fas fa-calendar-week'></i>
                 <span>Mes</span>
               </div>
               {/* <div className={`time-select-button ${frequency === 'Yearly' && 'selected-frequency'}`} onClick={() => handleFrequencyClick('Yearly')}>
-                <i class='fas fa-calendar-alt'></i>
+                <i className='fas fa-calendar-alt'></i>
                 <span>Año</span>
               </div> */}
             </div>
