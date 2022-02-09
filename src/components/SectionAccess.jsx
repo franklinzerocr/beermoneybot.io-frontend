@@ -75,7 +75,9 @@ const SectionAccess = (e) => {
                 <option value='¿Cómo llegaste a este proyecto?' disabled hidden>
                   ¿Cómo llegaste a este proyecto?
                 </option>
-                <option value='Web'>Web</option>
+                <option value='Articulo'>Articulo</option>
+                <option value='TikTok'>TikTok</option>
+                <option value='Facebook'>Facebook</option>
                 <option value='Twitter'>Twitter</option>
                 <option value='Recomendación'>Recomendación</option>
                 <option value='Otro'>Otro</option>
