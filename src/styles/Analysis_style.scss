@@ -1,9 +1,9 @@
-@import "var";
+@import 'var';
 
 .main-container-what {
   width: 100%;
   height: auto;
-  padding-top: 50px;
+  padding-top: 150px;
   padding-bottom: 30px;
   text-align: center;
 }
@@ -13,8 +13,15 @@
   min-width: 288px;
   max-width: 900px;
   margin: 0 auto;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   text-align: left;
+}
+.bio-content {
+  max-width: 700px;
+  width: 90%;
+  display: block;
+  margin: 0px auto;
+  text-align: justify;
 }
 
 .main-container-operate-title {
@@ -22,7 +29,7 @@
   min-width: 288px;
   max-width: 900px;
   margin: 0 auto;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   text-align: right;
 }
 
@@ -32,7 +39,7 @@
   line-height: 1.6rem;
   color: white;
   margin-bottom: 25px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .main-container-what h2 {
@@ -40,7 +47,7 @@
   font-weight: bold;
   line-height: 2rem;
   color: orange;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .main-container-what p {
@@ -49,7 +56,7 @@
   font-weight: 500;
   line-height: 1.6rem;
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .main-product-container {

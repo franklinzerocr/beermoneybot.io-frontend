@@ -1,7 +1,6 @@
 import '../styles/Footer_style.scss';
 import logo from '../assets/Logos/LogoIndex.png';
-import { Link } from "react-router-dom";
-
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -10,9 +9,15 @@ const Footer = () => {
         <div className='logo-footer-container'>
           <img src={logo} alt='Logo de BeermoneyBot 2020' />
           <div className='socials'>
-            <i className='fab fa-twitter'></i>
-            <i className='fab fa-medium-m'></i>
-            <i className='fab fa-telegram-plane'></i>
+            <a href={`https://twitter.com/beermoney_bot`} target='_blank' rel='noreferrer'>
+              <i className='fab fa-twitter'></i>
+            </a>
+            <a href={`https://medium.com/beermoney-bot`} target='_blank' rel='noreferrer'>
+              <i className='fab fa-medium-m'></i>
+            </a>
+            <a href={`https://t.me/beermoneyAnuncios`} target='_blank' rel='noreferrer'>
+              <i className='fab fa-telegram-plane'></i>
+            </a>
           </div>
         </div>
       </section>

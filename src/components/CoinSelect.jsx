@@ -1,13 +1,7 @@
-import React from 'react'
+import React from 'react';
 import '../styles/CoinSelect_style.scss';
-import btc from '../assets/home/btc.png'
-import usdt from '../assets/home/usdt.png'
-
-
-
-
-
-
+import btc from '../assets/home/btc.png';
+import usdt from '../assets/home/usdt.png';
 
 const CoinSelect = ({ coin, setCoin }) => {
   const handleCoinClick = (coin) => {
@@ -16,17 +10,17 @@ const CoinSelect = ({ coin, setCoin }) => {
   return (
     <>
       <div className='coin-select-container'>
-        <div className={`coin-chip ${coin === 'BTC' && 'selected-coin'}`} onClick={() => handleCoinClick('BTC')}>
-          <img src={btc} alt="BTC" />
-          <span>BTC</span> 
-        </div>
-        <div className={`coin-chip ${coin === 'USDT' && 'selected-coin'}`}  onClick={() => handleCoinClick('USDT')}>
-        <img src={usdt} alt="UST" />
+        <div className={`coin-chip ${coin === 'USDT' && 'selected-coin'}`} onClick={() => handleCoinClick('USDT')}>
+          <img src={usdt} alt='UST' />
           <span>USDT</span>
+        </div>
+        <div className={`coin-chip ${coin === 'BTC' && 'selected-coin'}`} onClick={() => handleCoinClick('BTC')}>
+          <img src={btc} alt='BTC' />
+          <span>BTC</span>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default CoinSelect
+export default CoinSelect;
