@@ -20,8 +20,8 @@ const SectionOperate = () => {
       </div>
       <AnimationOnScroll animateIn='animate__fadeInDown' animateOnce={true}>
         <div className='bio-content'>
-          <p>BeerMoney Bot es un sofware compuesto de muchos modulos, que hace compras y ventas de forma automatizada en el mercado cripto 24/7.</p>
-          <p>Gracias al Data Mining y la aplicacion de Inteligencia Artificial en distintos niveles y formas, obtiene un panorama completo e integral de cada criptomoneda, y se anticipa o reacciona rapidamente a los movimientos dentro del mercado cripto.</p>
+          <p>BeerMoney Bot es un sofware compuesto de muchos módulos, que hace compras y ventas de forma automatizada en el mercado cripto 24/7.</p>
+          <p>Gracias al Data Mining y la aplicación de Inteligencia Artificial en distintos niveles y formas, obtiene un panorama completo e integral de cada criptomoneda, y se anticipa o reacciona rapidamente a los movimientos dentro del mercado cripto.</p>
         </div>
       </AnimationOnScroll>
       <section className='main-product-container'>
