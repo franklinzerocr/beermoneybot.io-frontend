@@ -29,12 +29,12 @@ const Footer = () => {
               <li>
                 <Link to='/'>Home</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to='/roadmap'>Roadmap</Link>
               </li>
               <li>
                 <Link to='/team'>Team</Link>
-              </li>
+              </li> */}
               <li>
                 <a href='/#access'>Access</a>
               </li>

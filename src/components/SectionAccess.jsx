@@ -61,7 +61,7 @@ const SectionAccess = (e) => {
               <br />
               <small>
                 {' '}
-                <b> Para solicitar acceso debes comunicarte con nuestro equipo</b>
+                <b>Puedes solicitar informacion comunicandote con nuestro equipo</b>
               </small>
               <img src={logo} alt='' className='recommended'></img>
             </h3>
@@ -82,7 +82,7 @@ const SectionAccess = (e) => {
                 <option value='Recomendación'>Recomendación</option>
                 <option value='Otro'>Otro</option>
               </select>
-              <textarea id='fabout' name='fabout' rows='4' cols='50' placeholder='Háblanos un poco de tí...' required minLength='2'></textarea>
+              <textarea id='fabout' name='fabout' rows='4' cols='50' placeholder='Presumenos un poco de ti...' required minLength='2'></textarea>
               <br />
               <br />
               <div className='captcha-container'>

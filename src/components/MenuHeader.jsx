@@ -1,5 +1,5 @@
 import '../styles/MenuHeader_style.scss';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 import logo from '../assets/Logos/log blanco-01.svg';
 
@@ -14,12 +14,12 @@ export const MenuHeader = () => {
           <li className='menu-item'>
             <Link to='/'>Home</Link>
           </li>
-          <li className='menu-item'>
+          {/* <li className='menu-item'>
             <Link to='/roadmap'>Roadmap</Link>
-          </li>
-          <li className='menu-item'>
+          </li> */}
+          {/* <li className='menu-item'>
             <Link to='/team'>Team</Link>
-          </li>
+          </li> */}
           <li className='menu-item'>
             <a href='/#access'>Access</a>
           </li>

@@ -16,15 +16,6 @@ const SectionTeam = () => {
       },
     },
     {
-      portrait: portraits.nathaly,
-      role: 'administration',
-      fullName: 'Nathaly Quintero',
-      position: 'Directora Administrativa',
-      socials: {
-        twitter: 'lanathquintero',
-      },
-    },
-    {
       portrait: portraits.ricardo,
       role: 'crypto',
       fullName: 'Ricardo López',
@@ -37,18 +28,9 @@ const SectionTeam = () => {
       portrait: portraits.kevin,
       role: 'marketing',
       fullName: 'Kevin Hernández',
-      position: 'Director de Marketing',
+      position: 'Encargado de Marketing',
       socials: {
         twitter: 'KevinNegocios',
-      },
-    },
-    {
-      portrait: portraits.karlianna,
-      role: 'frontend',
-      fullName: 'Karliana Suárez',
-      position: 'Frontend Developer',
-      socials: {
-        twitter: 'KarliMSC',
       },
     },
     {
